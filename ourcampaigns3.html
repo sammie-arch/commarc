@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Campaigns</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+         
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="icon" href="Images/comm arc icon.png" type="image/svg" />
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+          .container {
+  max-width: 100%;
+  padding: 0px; /* Optional padding */
+  overflow-x: hidden;
+}
+        @font-face {
+  font-family: 'Bagoss Bold';
+  src: url('font/BagossStandardTRIAL-Regular.ttf ') format('truetype');
+  font-weight: 400;
+  
+}
+
+font-face {
+  font-family: 'Bagoss Bold';
+  src: url('font/BagossStandardTRIAL-Regular.ttf ') format('truetype');
+  font-weight: 700;
+  
+}
+
+font-face {
+  font-family: 'Bagoss Bold';
+  src: url('font/BagossStandardTRIAL-Regular.ttf ') format('truetype');
+  font-weight: 600;
+  
+}
+font-face {
+  font-family: 'Bagoss Bold';
+  src: url('font/BagossStandardTRIAL-Regular.ttf ') format('truetype');
+  font-weight: 500;
+  
+}
+        .navbar {
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 1%;
+            position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+   
+
+        }
+        /* nav */
+      
+        .navbar a {
+          text-decoration: none;
+  color: #656565;
+  margin: 0 1rem;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 1px;
+  padding: 14px;
+      
+        }
+          
+           
+        
+       /* NAV */
+       .navdiv {
+          display: flex;
+  justify-content: space-between; /* ✅ Keeps logo left and nav right */
+  align-items: center;
+  width: 100%;
+        }
+        /*NAV  */
+        .navdiv ul {
+          display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  flex-wrap: wrap;
+        }
+        .navdiv ul li {
+            margin: 0 1rem;
+        }
+        .logo{
+            margin-left: 50px;
+            margin-right: 90px;
+            
+        }
+        /*Hover effects*/
+        .navdiv ul li.campaigns a:hover,
+        .navdiv ul li.partners a:hover,.navdiv ul li.about a:hover  {
+            color: white; 
+            text-decoration: none; 
+            background-color: purple;
+            border-radius: 20px;
+        }
+        .navdiv ul li.get a{
+            background-color: purple;
+            color: white;
+            padding: 20px 30px;
+            border-radius: 5px;
+            
+        }
+        .navdiv ul li.get a :hover{
+            color:white;
+            animation: shake 0.5s;
+            
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+        .mini-nav {
+width: 100%;
+height: 195px;
+background-color: #032430;
+
+}
+/* 1st section */
+.campaign-section {
+  background-color: #f1f2ff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.campaign-title {
+  font-size: 117px;
+  font-weight: 700;
+  font-family: 'Bagoss Bold', sans-serif;
+  color: #061931; /* Adjust color as needed */
+  margin-bottom: 20px;
+}
+
+.campaign-text {
+  font-family: 'Bagoss Bold', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+/* image section */
+.image-section {
+  padding: 60px 20px;
+  text-align: center;
+  margin-left: 30px;
+  background-color: #fff; /* optional, or leave transparent */
+}
+
+.campaign-image {
+  max-width: 90%;
+  height: auto;
+  
+  box-shadow:  14px rgba(0, 0, 0, 0.2); /* optional: soft shadow */
+}
+
+.overview-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 120px;
+  
+  max-width: 90%;
+  gap: 50px;
+  background-color: #fff; /* optional: subtle background */
+  flex-wrap: wrap; /* for responsiveness */
+}
+
+.overview-left,
+.overview-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.overview-left h1 {
+  font-size: 42px;
+  font-family: 'Bagoss Bold', sans-serif;
+  color: #17012C;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: 'plus-jakarta-sans';
+}
+
+.left-text {
+    font-size: 20px;
+  color: #504E4E;
+  font-family: 'Bagoss Bold', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.right-text {
+    font-size: 20px;
+  color: #504E4E;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Bagoss Bold', sans-serif;
+  padding-top: 35px;
+  margin-left: 30px;
+
+}
+
+.nav-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 40px 0 20px;
+}
+
+.arrow {
+  background-color: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  border: 1px solid #504E4E;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: #351b41;
+}
+
+.arrow-img {
+  width: 250px;
+  height: 24px;
+  object-fit: contain;
+}
+
+ /* Example styles for customization */
+ .blue-icon {
+        color: #6A47ED;
+        font-weight: bold;
+       font-size: 30px;
+        margin-right: 8px; /* Adjust spacing between the icon and the text */
+    }
+
+    .column {
+        width: 30%; /* Adjust column width as needed */
+    }
+    .column p{
+        font-size: 20px;
+        font-family: 'Bagoss Bold', sans-serif;
+        color: #504E4E;
+        line-height: 1.6;
+        font-weight: 400;
+        margin-bottom: 10px; /* Add spacing between items */
+    }
+
+    .progress-container {
+        text-align: center;
+        margin-bottom: 20px; /* Add some spacing between sections */
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 10px;
+        background-color: white; /* Light gray background for progress bar */
+        position: relative;
+    }
+
+  
+
+    .header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px; /* Adjust the space between the header row and the progress bar */
+    }
+
+    .header-row h4 {
+      font-family: 'Bagoss Bold', sans-serif;
+        margin:10px;
+        padding: 0 10px;
+    }
+    .final-results {
+        padding: 10px 20px;
+        text-align: center;
+       
+    }
+    .final-results h1 {
+        font-size: 42px;
+        color: #17012C;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-family: 'Bagoss Bold', sans-serif;
+        text-align: left;
+        padding-left: 90px;
+    }
+
+    .two-column-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* space between columns */
+ 
+ 
+  flex-wrap: wrap; /* responsive stacking on small screens */
+}
+
+.column {
+  flex: 1;
+  max-width: 700px;
+}
+
+.column-image {
+    margin-top: 40px;
+  width: 600px; /* Adjust width as needed */
+  height: auto;
+  display: block;
+  
+}
+
+/* carousel */
+
+.carousel-section {
+  text-align: center;
+  padding: 40px 0;
+  background-color: white;
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-pair {
+  display: none;
+  gap: 90px;
+  justify-content: center;
+}
+
+.image-pair.active {
+  display: flex;
+}
+
+.image-pair img {
+  width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  gap: 890px;
+  position: relative;
+
+}
+
+.carousel-arrows::before,
+.carousel-arrows::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px; /* adjust the length */
+  height: 2px;
+  margin-bottom: 5px;
+
+
+  background-color: #E5E5E5;
+}
+.carousel-arrows::before{
+  top: 0;
+}
+
+.carousel-arrows::after{
+  bottom: 0;
+  
+}
+
+.arrow {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.arrow img {
+  width: 24px;
+  height: 24px;
+}
+ .arrow-label {
+ 
+  
+}
+
+.lastpart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f2ff;
+    gap: 40px; /* Adds space between the two images */
+    padding: 40px 0;
+    margin-top: 50px;
+}
+.lastpart .readytostart {
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px; /* Adjusts the overlap */
+   
+}
+
+/* Subscription Form */
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  margin: 0 0 100px 0;
+}
+
+.subscription-form input {
+  padding: 15px;
+  font-size: 18px;
+  width: 390px;
+  border: 2px;
+  border-radius: 20px;
+  outline: none;
+  height: 100px;
+}
+
+.subscription-form button {
+  background-color: purple;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: -90px;
+}
+
+.subscription-form button:hover {
+  background-color: #6a0dad;
+}
+
+
+/* Footer */
+
+.footer {
+  background-color: #442052;
+  width: 1920px;
+  height: 520px;
+  padding: 50px 100px;
+  color: white;
+  font-family: 'Bagoss Bold', sans-serif;
+    width: 100%;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+
+/* Footer Logo */
+.footer-logo {
+  width: 320px;
+  margin-bottom: 30px;
+}
+
+/* Footer Column Styling */
+.footer-column h2 {
+  font-size: 29px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 20px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0 90px 0;
+  font-size: 20px;
+  font-weight: 500px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: none;
+}
+
+/* Social Icons */
+.social-icons img {
+  width: 30px;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+/* Recent Posts */
+.recent-post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.recent-post img {
+  width: 80px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.recent-post a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.recent-post a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Us Section */
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-item img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+/* Subscription Form */
+.subscription-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+  margin-right: 10px;
+}
+
+.subscription-form input {
+  padding: 12px;
+  font-size: 16px;
+  width: 420px;
+  border: none;
+  border-radius: 15px;
+}
+
+.subscription-form button {
+  background-color: #692481;
+  color: white;
+  font-size: 24px;
+  padding: 12px 20px;
+  border: none;
+  font-family: "Bagoss Standard TRIAL";
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.subscription-form button:hover {
+  background-color: #6a0dad;
+  color: white;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer-bottom hr {
+  border: 1px solid white;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.small-footer {
+  width: 100%;
+  height: 80px;
+  background-color: #796ab0; /* Slightly darker purple */
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  margin-top: -50px;
+}
+.small-footer p {
+  color: #ded8e1;
+  font-size: 24px;
+  font-family: "Roboto Mono";
+  font-weight: 400;
+}
+
+/* Ensure images are responsive */
+.image-stack img {
+    width: 100%; /* Prevents images from going too wide */
+    height: auto;
+    
+    
+}
+.hamburger{
+  display: none;
+}
+.close-btn{
+  display: none;
+}
+ .nav-item-get a.nav-link,
+.nav-item.get a.nav-link {
+  background-color: #663776;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: 'Bagoss Bold', sans-serif;
+  transition: 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-item-get a.nav-link:hover,
+.nav-item.get a.nav-link:hover {
+  background-color: #4e265c;
+  color: white;
+}
+@media (min-width: 992px) {
+  .row > div:nth-of-type(2) .box-top,
+  .row > div:nth-of-type(5) .box-top {
+    background-color: #4e265c;
+    transform: translateY(-70px);
+  }
+   .mobile-logo {
+    height: 70px;
+    width: auto;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+
+ @media (max-width: 991px) {
+ 
+
+  .navbar-toggler {
+    background-color: #4e265c;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+   
+  
+  }
+
+  .logo {
+    margin: 0;
+  }
+   .mobile-logo {
+    width: 100px;
+     /* ⬅️ prevent it from growing too wide */
+    height: auto;
+    
+    flex-shrink: 100;
+   
+  }
+
+  .navbar-toggler {
+    margin-right: 15px;
+    background-color: #663776;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .navbar-toggler img {
+    width: 24px;
+    height: 24px;
+    
+  }
+
+  .d-lg-none .logo {
+    /* flex-shrink: 1;
+    overflow: hidden; */
+  }
+
+  .d-lg-none {
+    /* padding: 0 16px;  */
+  }
+
+  .container-fluid{
+    padding: 0 !important;
+  }
+   .navbar-toggler {
+    z-index: 999;
+  }
+
+  .navbar .logo img,
+  .navbar-toggler img {
+    max-height: 40px;
+    width: auto;
+  }
+ 
+
+  #nav-links-mobile {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    max-width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 20px;
+    gap: 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 1050;
+    transition: all 0.3s ease;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: block;
+    z-index: 1060;
+  }
+
+  .close-btn img {
+    width: 32px;
+    height: 32px;
+  }
+  
+
+}
+
+
+/* Mobile (1 card per row) */
+@media (max-width: 767px) {
+  .mini-nav{
+        display: none;
+    }
+    .campaign-title {
+    font-size: 38px; /* Scaled down from 117px */
+    margin-bottom: 16px;
+    margin-top: 8%;
+  }
+
+  .campaign-text {
+    
+    font-size: 11px;
+    padding: 0 15px; /* Optional spacing */
+    line-height: 1.5;
+    color: #636363;
+  }
+
+  .campaign-section {
+    padding: 60px 20px 40px;
+  }
+
+  .image-section {
+    display: none; /* Hide the image section on mobile */
+  }
+  /* mobile only section */
+   .betwinner-mobile-section {
+    background-color: #fff; /* Optional */
+    padding: 40px 20px;
+  }
+
+  .mobile-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0px;
+  }
+
+  .left-column {
+    flex: 1;
+  }
+
+  .left-column h1 {
+    font-size: 24px;
+    font-family: 'Bagoss Bold', sans-serif;
+    color: #061931;
+    margin-bottom: 20px;
+  }
+
+  .image-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+
+  .image-row img {
+    width: 50px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .right-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .right-column img {
+    width: 80%;
+    height: 80%;
+    margin-top: 35%;
+    margin-left: 50px;
+   
+  }
+  /*  Overview */
+  .overview-right p{
+    display: none;
+  }
+  .overview-section {
+    flex-direction: column;
+    padding: 20px 20px;
+    text-align: center;
+  }
+
+  .overview-left h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .left-text {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #504E4E;
+    margin-bottom: 0%;
+  }
+  .nav-arrows {
+    padding: 0 10px;
+  }
+
+  .arrow {
+    width: 50px;
+    height: 50px;
+  }
+
+  .arrow-img {
+    width: 18px;
+    height: auto;
+  }
+   .final-results {
+    padding: 20px 15px;
+  }
+
+  .final-results h1 {
+    font-size: 25px;
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .columns .column {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  .columns .column:last-child {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .progress-container {
+    padding: 0 10px;
+  }
+  .carousel-wrapper {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .image-pair {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .image-pair img {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carousel-arrows {
+    gap: 40px;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-top: 40px;
+  }
+
+  .carousel-arrows::before,
+  .carousel-arrows::after {
+    width: 90%;
+  }
+
+  .arrow {
+    width: 48px;
+    height: 48px;
+    margin: 10px 0;
+  }
+
+  .arrow img {
+    width: 20px;
+    height: 20px;
+    border: none;
+  }
+.lastpart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f2ff;
+    gap: 40px; /* Adds space between the two images */
+    padding: 40px 0;
+}
+.lastpart .readytostart {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px; /* Adjusts the overlap */
+   
+}
+/* Subscription */
+.subscription-form input {
+  padding: 10px;
+  font-size: 14px;
+  width: 280px;
+  border: 2px;
+  border-radius: 20px;
+  font-family: 'Bagoss Bold', sans-serif;
+  outline: none;
+  height: 80px;
+
+}
+
+.subscription-form button {
+  background-color: #713586!important;
+  color: white;
+  font-size: 18px;
+  padding: 1px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: -90px;
+  font-family: 'Bagoss Bold', sans-serif;
+  font-weight: 400;
+    overflow: show;
+    
+    
+}
+/* footer */
+.footer {
+  padding: 40px 20px;
+  height: auto;
+  background-color: #4E265C;
+}
+
+.footer-container {
+  grid-template-columns: 1fr; /* Stack all columns on mobile */
+  gap: 20px;
+}
+.footer-column p{
+  font-size: 12px;
+  width: 70%;
+  
+  
+}
+.social-icons  a img {
+  margin-top: 5%;
+}
+.footer-logo {
+  width: 60%;
+}
+
+.footer-column h2 {
+  font-size: 16px;
+}
+
+.footer-column ul li {
+  margin-bottom: 22px;
+}
+
+.footer-column ul li a {
+  font-size: 12px;
+ 
+}
+
+.recent-post a {
+  font-size: 12px;
+}
+.footer-links{
+  margin-top: 0%;
+}
+
+
+
+.footer-links {
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.small-footer {
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.small-footer p {
+  font-size: 14px;
+}
+
+.small-footer{
+  display: none;
+}
+  
+        }
+
+@font-face {
+            font-family: 'Bagoss Standard TRIAL';
+            src: url('path/to/BagossStandardTRIAL.woff2') format('woff2'),
+                 url('path/to/BagossStandardTRIAL.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+  
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+             <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="container-fluid">
+
+    <!-- ✅ MOBILE ONLY: Logo + Toggler -->
+    <div class="d-lg-none w-100 d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/Logo.svg" alt="Mobile Logo" class="mobile-logo" />
+        </a>
+      </div>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <img src="Images/hamburgerwhite.png" alt="Menu" width="24" height="24" />
+      </button>
+    </div>
+
+    <!-- ✅ DESKTOP ONLY: Logo + Nav -->
+    <div class="d-none d-lg-flex justify-content-between align-items-center w-100">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/Logo.svg" alt="Desktop Logo" class="desktop-logo" />
+        </a>
+      </div>
+
+      <ul class="navbar-nav d-flex flex-row gap-3" id="nav-links-desktop">
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="ourcampaign.html">Our Campaigns</a></li>
+        <li class="nav-item"><a class="nav-link" href="partners.html">Our Partners & Clients</a></li>
+        <li class="nav-item-get">
+          <a class="nav-link" href="mailto:info@communicationsarc.com"><span>Get</span> <span>Started</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ✅ MOBILE ONLY: Slide-Out Menu -->
+    <div class="collapse navbar-collapse d-lg-none custom-collapse mt-3" id="navbarNav">
+      <ul class="navbar-nav d-lg-none" id="nav-links-mobile">
+        <li class="close-btn">
+          <img src="Images/close_33dp_1F1F1F_FILL0_wght400_GRAD0_opsz40.png" alt="Close Menu" />
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="ourcampaign.html">Our Campaigns</a></li>
+        <li class="nav-item"><a class="nav-link" href="partners.html">Our Partners & Clients</a></li>
+        <li class="nav-item get">
+          <a class="nav-link" href="mailto:Info@communicationsarc.com"><span>Get</span> <span>Started</span></a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+        <div class="mini-nav">
+       <h1 style="color: white; text-align: center; padding: 30px;">Our Campaigns</h1>
+ </div>
+        <!-- 1st section -->
+        <section class="campaign-section">
+            <h1 class="campaign-title">Our Campaigns</h1>
+            <p class="campaign-text">
+              Why you need us for the growth of your business. Why you need us for the growth of your business.
+            </p>
+          </section>
+
+          <!-- Image Section (Separate) -->
+<section class="image-section">
+    <img src="Images/bitcasinoborder.png" alt="Campaign Visual" class="campaign-image" />
+  </section>
+
+   <!-- ✅ Mobile-Only Section -->
+<section class="betwinner-mobile-section d-block d-lg-none">
+  <div class="mobile-grid">
+    <!-- Left Column -->
+    <div class="left-column">
+      <h1>BITCASINO</h1>
+      <div class="image-row">
+        <img src="Images/creative.png" alt="Small 1">
+        <img src="Images/branding.png" alt="Small 2">
+      </div>
+      <div class="image-row">
+        <img src="Images/analytics.png" alt="Small 3">
+        <img src="Images/audience.png" alt="Small 4">
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column">
+      <img src="Images/List.png" alt="Main Image">
+    </div>
+  </div>
+
+  <hr>
+</section>
+          
+
+  <section class="overview-section">
+    <div class="overview-left">
+      <h1>Overview</h1>
+      <p class="left-text">
+        Nam posuere mauris enim, quis pretium elit placerat id Fusce egestas nisi vel ipsum vehicula facilisis In
+pulvinar imperdiet venenatis Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+inceptos himenaeos. Donec eu pulvinar lorem. Etiam vestibulum ligula quis nisl feugiat, consectetur
+placerat augue vestibulum Nulla aliquam elit eu diam pharetra.
+      </p>
+    </div>
+    <div class="overview-right">
+      <p class="right-text">
+        Fusce egestas nisi vel ipsum vehicula facilisis. In pulvinar imperdiet
+        venenatis. Class aptent taciti sociosqu ad litora torquent per conubia
+        nostra, per inceptos himenaeos. Donec eu pulvinar lorem. Etiam vestibulum
+        ligula quis nisl feugiat, consectetur placerat augue vestibulum.      </p>
+    </div>
+  </section>
+  
+  <div class="nav-arrows">
+    <!-- Left Image Arrow -->
+    <a href="ourcampaign2.html" class="arrow left-arrow">
+      <img src="Images/lefticon.png" alt="Previous" class="arrow-img" />
+    </a>
+  
+    <!-- Right Image Arrow -->
+    <a href="ourcampaigns3.html" class="arrow right-arrow">
+      <img src="Images/righticon.png" alt="Next" class="arrow-img" />
+    </a>
+  </div>
+  
+
+  <section class="final-results">
+    <h1>Final Results Of The Project</h1>
+    <div class="columns" style="display: flex; justify-content: left; gap: 30px;">
+        <!-- First Column -->
+        <div class="column">
+            <p><span class="blue-icon">•</span> consectetur placerat augue vestibulum</p>
+            <p><span class="blue-icon">•</span> consectetur placerat augue vestibulum</p>
+            <p><span class="blue-icon">•</span> consectetur placerat augue vestibulum</p>
+        </div>
+
+        <!-- Second Column -->
+        <div class="column">
+            <p><span class="blue-icon">•</span> consectetur placerat augue vestibulum</p>
+            <p><span class="blue-icon">•</span> consectetur placerat augue vestibulum</p>
+            <p><span class="blue-icon">•</span> consectetur placerat augue vestibulum</p>
+        </div>
+
+        <!-- Third Column -->
+        <div class="column">
+            <div class="progress-container">
+                <div class="header-row">
+                    <h4>Marketing</h4>
+                    <h4>96%</h4>
+                </div>
+                <img src="Images/marketing.png" alt="Progress Bar" class="progress-bar">
+            </div>
+            <!-- Engagement directly under Marketing -->
+            <div class="progress-container">
+                <div class="header-row">
+                    <h4>Engagement</h4>
+                    <h4>96%</h4>
+                </div>
+                <img src="Images/Engagement.png" alt="Progress Bar" class="progress-bar">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="two-column-section">
+    <div class="column">
+      <img src="Images/happynigg.png" alt="Image 1" class="column-image" />
+    </div>
+    <div class="column">
+      <img src="Images/runningdawg.png" alt="Image 2" class="column-image" />
+    </div>
+  </section> -->
+  
+  <!-- <div class="nav-arrows"> -->
+    <!-- Left Image Arrow -->
+    <!-- <a href="previous-page.html" class="arrow left-arrow">
+      <img src="Images/lefticon.png" alt="Previous" class="arrow-img" />
+    </a> -->
+  
+    <!-- Right Image Arrow -->
+    <!-- <a href="next-page.html" class="arrow right-arrow">
+      <img src="Images/righticon.png" alt="Next" class="arrow-img" />
+    </a>
+  </div> -->
+
+<!-- carosel -->
+  <section class="carousel-section">
+    <div class="carousel-wrapper" id="carouselWrapper">
+      <!-- First Set of Images -->
+      <div class="image-pair active">
+        <img src="Images/Bitcasino.png" alt="Image 1" />
+        <img src="Images/10cashback.png" alt="Image 2" />
+      </div>
+  
+      <!-- Second Set of Images -->
+      <div class="image-pair">
+        <img src="Images/10cashback.png" alt="Image 3" />
+        <img src="Images/Bitcasino.png" alt="Image 4" />
+      </div>
+  
+      <!-- Add more image sets if needed -->
+    </div>
+  
+    <!-- Arrows -->
+    <div class="carousel-arrows">
+      <div class="arrow left" onclick="changeSlide(-1)">
+         <img src="Images/lefticon.png" alt="Left Arrow" />   <!--<span class="arrow-label">Next Page</span> -->
+      </div>
+      <div class="arrow right" onclick="changeSlide(1)">
+ <img src="Images/righticon.png" alt="Right Arrow" />           <!--<span class="arrow-label2">Next Page</span> -->
+      </div>
+    </div>
+  </section>
+
+
+
+
+  
+  
+<!-- last part -->
+
+<div class="lastpart">
+  <img src="Images/Readytostart.png" alt="Top Image" class="readytostart">
+   <!-- Subscription Form -->
+   <form class="subscription-form">
+      <input type="email" placeholder="Enter your email.." required />
+      <button type="submit">Contact us</button>
+    </form>
+
+
+
+
+<!-- Footer -->
+
+<footer class="footer">
+        <div class="footer-container">
+          <!-- Column 1: Logo, Text, Social Icons -->
+          <div class="footer-column">
+            <img src="Images/Link.png" alt="Logo" class="footer-logo" />
+            <p>
+The number 1 digital marketing agency in nigeria, trusted by top brands to deliver impact with innovation            </p>
+            <div class="social-icons">
+              <a href=""><img src="Images/facebook.png" alt="Facebook" /></a>
+              <a href=""><img src="Images/twitter.png" alt="Twitter" /></a>
+              <a href=""><img src="Images/youtube.png" alt="Instagram" /></a>
+              <a href=""><img src="Images/Linkdin.png" alt="LinkedIn" /></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="footer-column">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="about.html">>> About Communications arc</a></li>
+              <li><a href="partners.html">>> Our Partners & Clients</a></li>
+              <li><a href="ourcampaign.html">>> Our Campaigns</a></li>
+              <li><a href="campaign.html">>> Our Services</a></li>
+              <li><a href="mailto:info@communicationsarc.com">>> Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Recent Posts -->
+          <div class="footer-column">
+            <h2>Recent Posts</h2>
+            <div class="recent-post">
+              <img src="Images/Recent 1.png" alt="Post 1" />
+              <a href="https://www.instagram.com/spaceuniverse.africa?igsh=cWhxdG83OXg2cXcw">Top 5 Most Famous Technology Trend In 2024</a>
+            </div>
+            <div class="recent-post">
+              <img src="Images/Recent 2.png" alt="Post 2" />
+              <a href="https://www.instagram.com/spaceuniverse.africa?igsh=cWhxdG83OXg2cXcw">The Surfing Man Will Blow Your Mind</a>
+            </div>
+          </div>
+
+          <!-- Column 4: Contact Us -->
+          <div class="footer-column">
+            <h2>Contact Us</h2>
+            <div class="contact-item">
+              <img src="Images/Icon (1).png" alt="Phone" />
+              <span>+2347046854526</span>
+            </div>
+            <div class="contact-item">
+              <img src="Images/Icon.png" alt="Email" />
+              <span>Info@communicationsarc.com</span>
+            </div>
+            <form class="subscription-form"  action="https://formsubmit.co/Bolu@communicationsarc.com" method="POST">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit" >Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+  <!-- Bottom section -->
+  <div class="footer-bottom">
+    <hr />
+    <div class="footer-links">
+      <p>© 2025 COMMUNICATIONS ARC LTD.</p>
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+        </div>
+        </div>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const closeBtn = document.querySelector(".close-btn");
+    const collapseNav = document.querySelector(".navbar-collapse");
+
+    if (closeBtn && collapseNav) {
+      closeBtn.addEventListener("click", function () {
+        const bsCollapse = bootstrap.Collapse.getInstance(collapseNav);
+        if (bsCollapse) {
+          bsCollapse.hide();
+        }
+      });
+    }
+  });
+</script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        
+        
+</body>
+</html>

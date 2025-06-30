@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+     <!-- Bootstrap CSS -->
+     
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+    <link rel="icon" href="Images/comm arc icon.png" type="image/svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        @font-face {
+  font-family: 'Bagoss';
+  src: url('font/BagossStandardTRIAL-Regular.ttf ') format('truetype');
+  font-weight: 400;
+  
+}
+
+
+
+
+font-face {
+  font-family: 'Bagoss Bold';
+  src: url('font/BagossStandardTRIAL-Regular.ttf ') format('truetype');
+  font-weight: 700;
+  
+}
+
+
+font-face {
+  font-family: 'Bagoss';
+  src: url('font/BagossStandardTRIAL-Regular.ttf ') format('truetype');
+  font-weight: 500;
+  
+}
+font-face {
+  font-family: 'Bagoss Bold';
+  src: url('font/BagossStandardTRIAL-Regular.ttf ') format('truetype');
+  font-weight: 500;
+  
+}
+
+font-face {
+  font-family: 'Bagoss Bold';
+  src: url('font/BagossStandardTRIAL-Regular.ttf ') format('truetype');
+  font-weight: 600;
+  
+}
+@font-face {
+  font-family: 'Bagoss';
+  src: url('font/BagossStandardTRIAL-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+
+}
+
+@font-face {
+  font-family: 'Bagoss';
+  src: url('font/BagossStandardTRIAL-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bagoss';
+  src: url('font/BagossStandardTRIAL-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+        body {
+ 
+  overflow-x: hidden;
+}
+/* Needed for all pages to prevent spaces in mobile view  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0px; /* Optional padding */
+  overflow-x: hidden;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+    
+          .navbar {
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 1%;
+            position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+   
+/* nav */
+        }
+        .navbar a {
+          text-decoration: none;
+  color: #043D50;
+  margin: 0 1rem;
+  font-family: 'Bagoss Bold',sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin: 1px;
+  padding: 14px;
+      
+        }
+        
+          
+           
+        /* NAV */
+        .navdiv {
+          display: flex;
+  justify-content: space-between; /* ✅ Keeps logo left and nav right */
+  align-items: center;
+  width: 100%;
+        }
+        /*NAV  */
+        .navdiv ul {
+          display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  flex-wrap: wrap;
+        }
+        .navdiv ul li {
+            margin: 0 1rem;
+        }
+        .logo{
+            margin-left: 50px;
+            margin-right: 90px;
+            
+        }
+        /*Hover effects*/
+        .navdiv ul li.campaigns a:hover,
+        .navdiv ul li.partners a:hover,.navdiv ul li.about a:hover  {
+            color: white; 
+            text-decoration: none; 
+            background-color: #663776;
+            border-radius: 20px;
+        }
+        .navdiv ul li.get a{
+            background-color:#663776;
+            color: white;
+            padding: 20px 30px;
+            border-radius: 5px;
+            
+        }
+        .navdiv ul li.get a :hover{
+            color:white;
+            animation: shake 0.5s;
+            
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+        .mini-nav {
+width: 100%;
+height: 195px;
+background-color: #032430;
+
+
+}
+
+.setniggs img{
+padding: 20px 60px 20px 60px;
+width: 100%;
+background-color:#F6F3FE ;
+}
+.text{
+    text-align: center;
+}
+.text h1{
+    font-size: 117px;
+    font-weight: 600;
+    color: #061931;
+    margin-left: 60px;
+    margin-top: 20px;
+    font-family: 'Bagoss Bold';
+
+}
+.text p{
+    font-family: 'Bagoss Bold';
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+   
+    text-align: center;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+.section1 {
+    background-color: #f1f2ff;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers everything */
+    text-align: center;
+    padding: 50px 20px; /* Adjust spacing */
+}
+
+/* New Section Styling */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    margin-top: 50px;
+}
+
+.left-content {
+    width: 45%;
+    text-align: left;
+    margin-left: -40px;
+}
+
+.left-content h1 {
+    font-size: 74px;
+    font-weight: 700;
+    color: #061931;
+    font-family: 'Bagoss Bold';
+    margin-bottom: 10px;
+}
+
+.contact-btn {
+    font-family: 'Bagoss Bold';
+    display: inline-block;
+    padding: 25px 80px;
+    background-color: #632977;
+    
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #6c3a7c;
+}
+
+.right-content {
+  
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between the paragraphs */
+}
+
+.right-content p {
+  
+    font-size: 30px;
+    font-family: 'Bagoss Bold';
+    color: #A5A5A5;
+    line-height: 1;
+    font-weight: 500;
+}
+
+/* section */
+.section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+      
+            margin: 0px ;
+            padding: 40px;
+            height: 100%;
+            background-color: #f1f2ff;
+            ;
+        }
+
+        .left {
+            position: relative;
+            width: 50%;
+            max-width:836px;
+            height: 680px;
+            margin-left: -20px;
+        }
+
+        .left img {
+            position: absolute;
+         
+           
+        }
+
+        .image1 {
+            width: 200px;
+            height: 165px;
+            top: 31px;
+            left: 27px;
+            z-index: 1;
+        }
+
+        .image2 {
+            width: 916px;
+            height: 640px;
+            top: 80px;
+            left: 77px;
+            z-index: 2;
+            max-width: 100%
+           
+        }
+
+        .image3 {
+            width: 210px;
+            height: 185px;
+            bottom: -95px;
+            right: -20px;
+            z-index: 1;
+        }
+
+        .right {
+            width: 44%;
+        }
+
+        .right h1 {
+            font-size: 70px;
+            margin-bottom: 50px;
+            font-weight: 700;
+            letter-spacing: 0%;
+            font-family: 'Bagoss Bold';
+            color: #061931;
+            margin-left: 30px;
+        }
+
+        .right p {
+            font-size: 30px;
+            color: #020202;
+            font-family: 'Bagoss Bold';
+            font-weight: 600;
+            line-height: 40px;
+            margin-bottom: 10px;
+            margin-left: 30px;
+
+        }
+        .desktop-only{
+           font-size: 30px;
+            color: #020202;
+            font-family: 'Bagoss Bold';
+            font-weight: 600;
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+        .mobile-only-image {
+  background-color: #fff; /* or any color you want */
+}
+
+.mobile-only-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+        .right .button {
+            display: inline-block;
+            padding: 20px 60px;
+            background-color: #632977;
+            color: white;
+            text-decoration: none;
+            border-radius: 9px;
+            font-size: 30px;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+            margin-top: 20px;
+            margin-left: 30px;
+            
+            font-family: 'Bagoss Bold';
+        }
+
+        .right .button:hover {
+            background-color: #5a008a;
+        }
+
+
+       /* <!-- ✅ CSS for Diagonal Split (left-to-right) --> */
+
+ .diagonal-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Bagoss', sans-serif;
+}
+
+.white-side {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  
+  background-color: white;
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+  z-index: 2;
+  color: black;
+  color: #221527;
+  padding:20px ; /* Even spacing inside the triangle */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  margin-left: 20px;
+  margin-bottom: 190px;
+}
+
+.purple-side {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #4e265c;
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+  z-index: 1;
+  color: white;
+  padding: 80px 10% 80px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+}
+
+/* Mission and Vision styling differences */
+.white-side h1 {
+  font-size: 48px;
+
+  color: #221527;
+  margin-left: 40%;
+  margin-bottom: 1%;
+}
+
+.purple-side h1 {
+  font-size: 48px;
+ margin-bottom: 9px;
+  color: #ffffff;
+
+}
+
+.white-side p {
+  font-size: 30px;
+  line-height: 31px;
+  width: 40%;
+  color: #221527;
+  margin-left: 60%;
+  margin-bottom: 20%;
+}
+
+.purple-side p {
+  font-size: 30px;
+  line-height: 31px;
+  color: #ffffff;
+  width: 40%;
+  margin-bottom: 4%;
+}
+
+  
+
+        
+         /* New Core Values Section */
+         .core-values {
+            text-align: center;
+            padding: 60px 20px ;
+            background-color: #f1f2ff;
+            padding-top: 150px;
+        }
+
+        .core-values h1 {
+            font-size: 100px;
+            margin-bottom: 50px;
+            color: #061931;
+            font-weight: 600px;
+            font-family: 'Bagoss Bold';
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 90px;
+           width: 90%;
+            margin: 10px auto;
+        }
+
+        .card {
+            position: relative;
+            background: white;
+            border-radius: 22px;
+            padding: 30px 50px 30px 50px;
+            text-align: center;
+            margin-bottom: 30px;
+            
+            
+
+            
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .card img {
+            width: 85px;
+            height:79px;
+            position: absolute;
+            top: -40px; /* Half outside, half inside */
+            left: 50%;
+            transform: translateX(-50%);
+            
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            font-size: 30px;
+            margin-top: 40px;
+            color: #5D5D5D;
+            font-family: 'Bagoss Bold';
+            
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Different Styles for Each Card */
+        .card-1 {
+            background: white;
+           
+        }
+
+        .card-2 {
+            background: white;
+        }
+
+        .card-3 {
+            background: white;
+            
+        }
+
+        .card-4 {
+            background:white;
+        }
+
+        /* What we offer  */
+        .what-we-offer-section {
+  width: 100%;
+  background-color: #fff;
+  padding: 80px 100px;
+}
+
+.offer-content {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.offer-content h1 {
+  font-size: 50px;
+  font-family: 'Bagoss Bold', sans-serif;
+  color: #17012C;
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.offer-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.offer-item h3 {
+  width: 250px; /* Fixed width for h3 */
+  font-size: 24px;
+  color: #17012C;
+  font-family: 'Bagoss Bold', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.offer-item p {
+  flex: 1;
+  font-size: 24px;
+  line-height: 20px;
+  color: #17012C;
+  font-family:'Bagoss Bold' ;
+  margin: 0;
+  font-weight: 500;
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 25px 50px;
+  background-color: #663776;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Bagoss Bold', sans-serif;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #4c2b5d;
+}
+        
+        /* Images Section */
+.image-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f2ff;
+    gap: 40px; /* Adds space between the two images */
+    padding: 40px 0;
+}
+.image-stack  .Globaltxt {
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px; /* Adjusts the overlap */
+   
+}
+.image-stack  .Globalimage {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+   
+    
+}
+.lastpart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f2ff;
+    gap: 40px; /* Adds space between the two images */
+    padding: 40px 0;
+}
+.lastpart .readytostart {
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px; /* Adjusts the overlap */
+   
+}
+
+/* Subscription Form */
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  margin: 0 0 100px 0;
+}
+
+.subscription-form input {
+  padding: 15px;
+  font-size: 18px;
+  width: 390px;
+  border: 2px;
+  border-radius: 20px;
+  outline: none;
+  height: 100px;
+}
+
+.subscription-form button {
+  background-color: purple;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: -90px;
+}
+
+.subscription-form button:hover {
+  background-color: #6a0dad;
+}
+
+
+/* Footer */
+
+.footer {
+  background-color: #442052;
+  width: 1920px;
+  height: 520px;
+  padding: 50px 100px;
+  color: white;
+  font-family: 'Bagoss Bold', sans-serif;
+  width: 100%;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+
+/* Footer Logo */
+.footer-logo {
+  width: 320px;
+  margin-bottom: 30px;
+}
+
+/* Footer Column Styling */
+.footer-column h2 {
+  font-size: 29px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 20px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0 90px 0;
+  font-size: 20px;
+  font-weight: 500px;
+  
+}
+
+.footer-column ul li a:hover {
+  text-decoration: none;
+}
+
+/* Social Icons */
+.social-icons img {
+  width: 30px;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+/* Recent Posts */
+.recent-post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.recent-post img {
+  width: 80px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.recent-post a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.recent-post a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Us Section */
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-item img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+/* Subscription Form */
+.subscription-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+  margin-right: 10px;
+}
+
+.subscription-form input {
+  padding: 12px;
+  font-size: 16px;
+  width: 420px;
+  border: none;
+  border-radius: 15px;
+}
+
+.subscription-form button {
+  background-color: #692481;
+  color: white;
+  font-size: 24px;
+  padding: 12px 20px;
+  border: none;
+  font-family: "Bagoss Standard TRIAL";
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.subscription-form button:hover {
+  background-color: #6a0dad;
+  color: white;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer-bottom hr {
+  border: 1px solid white;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  
+
+}
+.footer-links .terms{
+  margin-left: 1000px;
+}
+
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Ensure images are responsive */
+.image-stack img {
+    width: 100%; /* Prevents images from going too wide */
+    height: auto;
+    
+    
+}
+.hamburger {
+    display: none;
+  }
+  .close-btn {
+    display: none;
+  }
+  .nav-item-get a.nav-link,
+.nav-item.get a.nav-link {
+  background-color: #663776;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: 'Bagoss Bold', sans-serif;
+  transition: 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-item-get a.nav-link:hover,
+.nav-item.get a.nav-link:hover {
+  background-color: #4e265c;
+  color: white;
+}
+
+  @media (min-width: 992px) {
+  .row > div:nth-of-type(2) .box-top,
+  .row > div:nth-of-type(5) .box-top {
+    background-color: #4e265c;
+    transform: translateY(-70px);
+  }
+   .mobile-logo {
+    height: 70px;
+    width: auto;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+
+ @media (max-width: 991px) {
+ 
+
+  .navbar-toggler {
+    background-color: #4e265c;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+   
+  
+
+  }
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0px; /* Optional padding */
+  overflow-x: hidden;
+}
+
+  .logo {
+    margin: 0;
+  }
+   .mobile-logo {
+    width: 100px;
+     /* ⬅️ prevent it from growing too wide */
+    height: auto;
+    
+    flex-shrink: 100;
+   
+  }
+
+  .navbar-toggler {
+    margin-right: 15px;
+    
+    background-color: #663776;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .navbar-toggler img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .d-lg-none .logo {
+    /* flex-shrink: 1;
+    overflow: hidden; */
+  }
+
+  .d-lg-none {
+    /* padding: 0 16px;  */
+  }
+
+  .container-fluid{
+    padding: 0 !important;
+  }
+   .navbar-toggler {
+    z-index: 999;
+  }
+
+  .navbar .logo img,
+  .navbar-toggler img {
+    max-height: 40px;
+    width: auto;
+  }
+  .mini-nav{
+    display: none;
+  }
+  
+ 
+
+  #nav-links-mobile {
+    background-color:  white !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    max-width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 20px;
+    gap: 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2) !important;
+    z-index: 1050;
+    transition: all 0.3s ease;
+  }
+
+  
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: block;
+    z-index: 1060;
+  }
+
+  .close-btn img {
+    width: 32px;
+    height: 32px;
+  }
+  
+
+}
+
+@media (max-width: 768px) {
+ 
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+.section1 h1{
+    font-size: 45px;
+    margin-left: 0px;
+    margin-top: 20%;
+    
+    
+    color: #061931;
+    font-weight: 600;
+    font-family: 'Bagoss';
+    background-color: #F1F2FF;
+}
+.section1 p{
+    font-family: 'Bagoss';
+    font-weight: 400;
+    font-size: 11px;
+    color: #636363;
+    text-align: center;
+    align-items: center;
+    background-color: #F1F2FF;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    }
+    .setniggs img{
+      
+      width: 408.5px;
+      height: 218px;
+     
+      background-color: #F1F2FF;
+
+}
+.text{
+  background-color: #F1F2FF;
+  width:110%;
+ 
+}
+/* new section */
+.section1{
+  background-color: white;
+  
+}
+ .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+      
+    text-align: center;
+    width: 100%;
+  }
+
+  .left-content,
+  .right-content {
+    width: 100% !important;
+    margin: 0;
+  }
+
+  .left-content h1 {
+margin-top: 1%;
+    font-size: 28px;
+    color: #061931;
+    font-family: 'Bagoss';
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+    background-color: white;
+  }
+  .left-content h2{
+    color: #000000;
+    font-family: 'Bagoss';
+    font-weight: 400;
+    font-size: 15px;
+    
+    
+  }
+
+  .right-content img {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+  }
+
+  
+
+  .section {
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+
+  .left {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .left img {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .image2{
+    display: none;
+  }
+  .desktop-only{
+    display: none;
+  }
+
+  .image1,
+  .image3 {
+    display: none; /* hide top/bottom accents on mobile */
+  }
+
+  .image2 {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .right {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .right h1 {
+    font-family: 'Bagoss';
+    font-weight: 600;
+    font-size: 25px;
+    margin: 20px 0;
+    margin-left: 0;
+  }
+
+  .right p {
+    font-family: 'Bagoss';
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    line-height: 1.6;
+    margin-left: 0;
+  }
+.contact-btn{
+    
+  background-color: #632977;
+  margin-left: 20px;
+  border-radius: 5px;
+  
+}
+  .right .button {
+    font-size: 16px;
+    padding: 14px 32px;
+    margin-left: 0;
+  }
+ .mobile-only-image{
+  margin-left: 20px;
+  
+ }
+ /* Diagonal section */
+ .diagonal-section{
+  display: none;
+ }
+
+ /* Core Values Section */
+ .core-values {
+    padding: 20px 20px 20px 20px;
+    background-color: #F1F2FF;
+  }
+
+  .core-values h1 {
+    font-family: 'Bagoss';
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .values-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    padding: 1px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 2px 2px;
+    margin: 0 auto;
+        border: none;
+        border-radius: 10px;
+
+  }
+
+  .card img {
+    width: 45px;
+    height: 45px;
+    top: -30px;
+  }
+
+  .card h2 {
+    font-size: 13px;
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+
+  .card p {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+  .what-we-offer-section{
+    display: none;
+  }
+  /* what we offer */
+  .what-we-offer-mobile {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+.mobile-offer-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.mobile-offer-content h1 {
+  font-size: 30px;
+  font-family: 'Bagoss', sans-serif;
+  color: #000000;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.mobile-offer-item {
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.mobile-offer-item h3 {
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+  font-family: 'Bagoss', sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.mobile-offer-item p {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  
+  color: #000000;
+  font-family: 'Bagoss', sans-serif;
+  margin-bottom: 15px;
+}
+
+.mobile-read-more {
+  display: inline-block;
+  background-color: #663776;
+  color: #fff;
+  padding: 10px 9px 10px 9px;
+  font-size: 14px;
+  font-family: 'Bagoss Bold', sans-serif;
+  border-radius: 9px;
+  text-decoration: none;
+  
+  
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ✅ Centers the Read More button horizontally */
+  text-align: left; /* Optional: keeps text aligned left if desired */
+}
+
+.mobile-read-more:hover {
+  background-color: #4c2b5d;
+}
+/* Last part */
+.image-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f2ff;
+    gap: 40px; /* Adds space between the two images */
+    padding: 40px 0;
+}
+.image-stack  .Globaltxt {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px; /* Adjusts the overlap */
+   
+}
+.image-stack  .Globalimage {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+   
+    
+}
+.lastpart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f2ff;
+    gap: 40px; /* Adds space between the two images */
+    padding: 40px 0;
+}
+.lastpart .readytostart {
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px; /* Adjusts the overlap */
+   
+}
+/* Subscription */
+.subscription-form input {
+  padding: 10px;
+  font-size: 14px;
+  width: 280px;
+  border: 2px;
+  border-radius: 20px;
+  font-family: 'Bagoss Bold', sans-serif;
+  outline: none;
+  height: 80px;
+
+}
+
+.subscription-form button {
+  background-color: #713586!important;
+  color: white;
+  font-size: 18px;
+  padding: 1px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: -90px;
+  font-family: 'Bagoss Bold', sans-serif;
+  font-weight: 400;
+    overflow: show;
+    
+    
+}
+/* footer */
+.footer {
+  padding: 40px 20px;
+  height: auto;
+  background-color: #4E265C;
+}
+
+.footer-container {
+  grid-template-columns: 1fr; /* Stack all columns on mobile */
+  gap: 20px;
+}
+.footer-column p{
+  font-size: 12px;
+  width: 70%;
+  
+  
+}
+.social-icons  a img {
+  margin-top: 5%;
+}
+.footer-logo {
+  width: 60%;
+}
+
+.footer-column h2 {
+  font-size: 16px;
+}
+
+.footer-column ul li {
+  margin-bottom: 22px;
+}
+
+.footer-column ul li a {
+  font-size: 12px;
+ 
+}
+
+.recent-post a {
+  font-size: 12px;
+}
+.footer-links{
+  margin-top: 0%;
+}
+
+
+
+.footer-links {
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.small-footer {
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer-bottom hr {
+  border: 1px solid white;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+
+}
+.footer-links .terms{
+  margin-left: 10px;
+}
+
+.small-footer p {
+  font-size: 14px;
+}
+
+.small-footer{
+  display: none;
+}
+
+}
+
+
+
+        /* Responsive Design */
+      /* Responsive changes */
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="container-fluid">
+
+    <!-- ✅ MOBILE ONLY: Logo + Toggler -->
+    <div class="d-lg-none w-100 d-flex justify-content-between ">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/Logo.svg" alt="Mobile Logo" class="mobile-logo" />
+        </a>
+      </div>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <img src="Images/hamburgerwhite.png" alt="Menu" width="24" height="24" />
+      </button>
+    </div>
+
+    <!-- ✅ DESKTOP ONLY: Logo + Nav -->
+    <div class="d-none d-lg-flex justify-content-between align-items-center w-100">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/Logo.svg" alt="Desktop Logo" class="desktop-logo" />
+        </a>
+      </div>
+
+      <ul class="navbar-nav d-flex flex-row gap-3" id="nav-links-desktop">
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="ourcampaign.html">Our Campaigns</a></li>
+        <li class="nav-item"><a class="nav-link" href="partners.html">Our Partners & Clients</a></li>
+        <li class="nav-item get">
+          <a class="nav-link" href="mailto:info@communicationsarc.com"><span>Get</span> <span>Started</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ✅ MOBILE ONLY: Slide-Out Menu -->
+    <div class="collapse navbar-collapse d-lg-none custom-collapse mt-3" id="navbarNav">
+      <ul class="navbar-nav d-lg-none" id="nav-links-mobile">
+        <li class="close-btn">
+          <img src="Images/close_33dp_1F1F1F_FILL0_wght400_GRAD0_opsz40.png" alt="Close Menu" />
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="ourcampaign.html">Our Campaigns</a></li>
+        <li class="nav-item"><a class="nav-link" href="partners.html">Our Partners & Clients</a></li>
+        <li class="nav-item get">
+          <a class="nav-link" href="mailto:info@communicationsarc.com"><span>Get</span> <span>Started</span></a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+        <div class="mini-nav">
+            <!-- <h1 style="color: white; text-align: center; padding: 30px;">Our Campaigns</h1> -->
+        </div>
+
+
+
+
+        <section class="section1">
+            <div class="text">
+                <h1>Our Company</h1>
+                <p>Why you need communications arc for the growth of your business whether large or small scale.</p>
+                </div>
+
+                <div class="setniggs">
+                    <img src="Images/setniggs.png" alt="Setniggs">
+                </div>
+            
+                 <!-- New Section Below the Image -->
+    <div class="content-wrapper">
+        <div class="left-content">
+            <h1>Envision your brand's success until it becomes a reality</h1>
+               <section class="mobile-brand-section d-block d-lg-none text-center px-3 py-4">
+  <h2 class="mobile-heading mb-3">
+    Envision your brand’s success with us, a digital marketing agency driven by creativity, strategy, and results.
+    We take your goals, craft powerful campaigns, and turn your vision into a reality that connects, converts, and grows your brand.
+  </h2>
+
+  <img src="Images/Phone mockup commarc.png" alt="Phone Mockup" class="img-fluid phone-image" />
+</section>
+            <a href="mailto:Bolu@communicationsarc.com" class="contact-btn">CONTACT US</a>
+        </div>
+     
+        <div class="right-content">
+                            <img src="Images/Phone mockup commarc.png" alt="Image 2" class="image2">
+
+        </div>
+    </div>
+  
+
+        </section>
+
+        
+
+       
+        </div>
+
+        
+
+        <div class="section">
+            <div class="left">
+                <img src="Images/topimg.png" alt="Image 1" class="image1">
+                <img src="Images/two niggs.png" alt="Image 2" class="image2">
+                <img src="Images/topimg.png" alt="Image 3" class="image3">
+            </div>
+            <div class="right">
+                <h1>Turning bold ideas into digital success stories </h1>
+                <p>Communications Arc is a leading 360-marketing agency for
+                  Bookmakers in Africa. We are a target-driven marketing agency
+                  to help bookmakers increase brand visibility, player acquisition,
+                  conversion, and deposit. <br>
+
+                  <br>
+                  
+                  We have a track record of cracking the gaming market in
+                  different parts of Africa and helping our clients achieve their
+                  marketing goals.  <br>
+                 
+
+                  <br >
+                  <div class="desktop-only">
+                  Our deep understanding of the industry enables us to
+                  craft and implement strategies that drive our clients' marketing
+                  goals. By boosting new registrations, FTDs, STDs, and Revenue,
+                  we have consistently delivered tangible results for our clients.</p>
+                <button class="button" >Contact us</button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile-only image section -->
+<section class="mobile-only-image d-block d-lg-none text-center py-4">
+  <img src="Images/two niggs.png" alt="Mobile Image" class="img-fluid" />
+</section>
+         
+
+
+   <section class="diagonal-section">
+  <!-- White top-right diagonal section -->
+  <div class="white-side diagonal">
+    <h1>Our Mission</h1>
+    <p>
+      Communications Arc is a leading 360-marketing agency for Bookmakers in Africa. We are a target-driven marketing agency
+      to help bookmakers increase brand visibility, player acquisition, conversion, and deposit.
+      <br><br>
+      We have a track record of cracking the gaming market in different parts of Africa and helping our clients achieve their
+      marketing goals.
+    </p>
+  </div>
+
+  <!-- Purple bottom-left diagonal section -->
+  <div class="purple-side diagonal">
+    <h1>Our Vision</h1>
+    <p>
+      Communications Arc is a leading 360-marketing agency for Bookmakers in Africa. We are a target-driven marketing agency
+      to help bookmakers increase brand visibility, player acquisition, conversion, and deposit.
+      <br><br>
+      We have a track record of cracking the gaming market in different parts of Africa and helping our clients achieve their
+      marketing goals.
+    </p>
+  </div>
+</section>
+        <!-- Core Values Section -->
+    <div class="core-values">
+        <h1>Our Core Values</h1>
+        <div class="values-grid">
+            <!-- Card 1 -->
+            <div class="card card-1">
+                <img src="Images/value1.png" alt="Value 1">
+                <h2>Why you need us for the growth of your business Why you need us for the growth of your business</h2>
+                
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card card-2">
+                <img src="Images/value2.png" alt="Value 2">
+                <h2>Why you need us for the growth of your business Why you need us for the growth of your business</h2>
+               
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card card-3">
+                <img src="Images/value3.png" alt="Value 3">
+                <h2>Why you need us for the growth of your business Why you need us for the growth of your business</h2>
+              
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card card-4">
+                <img src="Images/value4.png" alt="Value 4">
+                <h2>Why you need us for the growth of your business Why you need us for the growth of your business</h2>
+              
+            </div>
+        </div>
+    </div>
+
+    <!-- what we offer section -->
+
+    <section class="what-we-offer-section">
+      <div class="offer-content">
+        <h1>What We Offer</h1>
+    
+        <div class="offer-item">
+          <h3>Digital Marketing:</h3>
+          <p>Digital marketing is a cornerstone of brand success. It encompasses a spectrum of strategies, tools, and platforms to reach, engage, and convert your audience.</p>
+        </div>
+    
+        <div class="offer-item">
+          <h3>Influencer Marketing:</h3>
+          <p>With today's consumers seeking trust and authenticity, influencer marketing offers a direct and credible connection to your target audience.</p>
+        </div>
+    
+        <div class="offer-item">
+          <h3>Affiliate Marketing:</h3>
+          <p>Affiliate management is a critical aspect of running a successful affiliate marketing program. It involves recruiting affiliates, setting up the program, maintaining communication.</p>
+        </div>
+    
+        <div class="offer-item">
+          <h3>Guerilla Marketing:</h3>
+          <p>We use this unconventional and creative marketing strategy to promote a product or brand through low-cost, high-impact tactics.</p>
+        </div>
+    
+        <div class="offer-item">
+          <h3>Radio Promotions:</h3>
+          <p>Radio remains a powerful medium for connecting with audiences. It offers a unique and intimate platform to deliver your brand message directly to the ears of your target customers.</p>
+        </div>
+    
+        <div class="offer-item">
+          <h3>Communications Strategy & Insights:</h3>
+          <p>We develop communication strategies that define how an organization delivers messages to its target audience to achieve specific goals.</p>
+        </div>
+    
+        <a href="campaign.html" class="read-more-btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- Mobile only we offer secton -->
+    <section class="what-we-offer-mobile d-block d-lg-none">
+  <div class="mobile-offer-content">
+    <h1>What We Offer</h1>
+
+    <div class="mobile-offer-item">
+      <h3>Digital Marketing</h3>
+      <p>Digital marketing is a cornerstone of brand success. It encompasses a  spectrum of strategies, tools, and platforms to reach, engage, and convert your audience...</p>
+      <a href="campaign.html" class="mobile-read-more">Read More >></a>
+    </div>
+
+    <div class="mobile-offer-item">
+      <h3>Influencer Marketing</h3>
+      <p>We onboard top influencers as brand ambassadors for a specified duration, delivering end to end support that include  comprehensive content monitoring, strategic direction, and...</p>
+      <a href="campaign2.html" class="mobile-read-more">Read More >></a>
+    </div>
+
+    <div class="mobile-offer-item">
+      <h3>Affiliate Marketing</h3>
+      <p>Affiliate marketing has evolved from a transactional channel into a strategic driver of brand awareness, trust, and scalable revenue. It thrives on partnerships  not just with anyone who can sell, but with voices that influence, communities that...</p>
+      <a href="campaign3.html" class="mobile-read-more">Read More >></a>
+    </div>
+
+    <div class="mobile-offer-item">
+      <h3>Guerilla Marketing</h3>
+      <p> We use the promotion of goods or services through radio broadcasts, whether in the form of commercials or programming. It is the practice of purchasing ad spots on popular radio stations to promote your products and services...</p>
+      <a href="campaign4.html" class="mobile-read-more">Read More >></a>
+    </div>
+
+    <div class="mobile-offer-item">
+      <h3>Radio Promotions</h3>
+      <p>We use the promotion of goods or services through radio broadcasts, whether in the form of commercials or programming. It is the practice of purchasing ad spots on popular radio stations to promote your products and services.</p>
+      <a href="campaign5.html" class="mobile-read-more">Read More >></a>
+    </div>
+
+    <div class="mobile-offer-item">
+      <h3>Communications Strategy & Insights</h3>
+      <p>At Communications Arc, our approach to communication strategy is rooted in deep audience understanding and data-driven decision making. Before launching any campaign, we conduct thorough research to uncover key...</p>
+      <a href="campaign6.html" class="mobile-read-more">Read More >></a>
+    </div>
+  </div>
+</section>
+
+ <!-- Stacked Images -->
+<div class="image-stack">
+    <img src="Images/Globaltxt.png" alt="Top Image" class="Globaltxt">
+    <img src="Images/Globalimage.png" alt="Bottom Image" class="Globalimage">
+
+</div>
+
+<!-- last part -->
+
+<div class="lastpart">
+    <img src="Images/Readytostart.png" alt="Top Image" class="readytostart">
+     <!-- Subscription Form -->
+     <form class="subscription-form"  action="https://formsubmit.co/Bolu@communicationsarc.com" method="POST">
+        <input type="email" placeholder="Enter your email.." required />
+        <button type="submit">Contact us</button>
+      </form>
+
+
+
+
+ <!-- Footer -->
+
+ <footer class="footer">
+    <div class="footer-container">
+      <!-- Column 1: Logo, Text, Social Icons -->
+      <div class="footer-column">
+        <img src="Images/Link.png" alt="Logo" class="footer-logo" />
+        <p>
+The number 1 digital marketing agency in nigeria, trusted by top brands to deliver impact with innovation            </p>
+        </p>
+        <div class="social-icons">
+          <a href=""><img src="Images/facebook.png" alt="Facebook" /></a>
+          <a href=""><img src="Images/twitter.png" alt="Twitter" /></a>
+          <a href=""><img src="Images/youtube.png" alt="Instagram" /></a>
+          <a href=""><img src="Images/Linkdin.png" alt="LinkedIn" /></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-column">
+        <h2>Quick Links</h2>
+        <ul>
+           <li><a href="about.html">>> About Communications arc</a></li>
+              <li><a href="partners.html">>> Our Partners & Clients</a></li>
+              <li><a href="ourcampaign.html">>> Our Campaigns</a></li>
+              <li><a href="campaign.html">>> Our Services</a></li>
+              <li><a href="mailto:info@communicationsarc.com">>> Contact Us</a></li>
+            </ul>
+      </div>
+
+      <!-- Column 3: Recent Posts -->
+      <div class="footer-column">
+        <h2>Recent Posts</h2>
+        <div class="recent-post">
+          <img src="Images/Recent 1.png" alt="Post 1" />
+          <a href="https://www.instagram.com/spaceuniverse.africa?igsh=cWhxdG83OXg2cXcw">Exciting news about our latest campaign</a>
+        </div>
+        <div class="recent-post">
+          <img src="Images/Recent 2.png" alt="Post 2" />
+          <a href="https://www.instagram.com/spaceuniverse.africa?igsh=cWhxdG83OXg2cXcw">How we are impacting the digital world</a>
+        </div>
+      </div>
+
+      <!-- Column 4: Contact Us -->
+      <div class="footer-column">
+        <h2>Contact Us</h2>
+        <div class="contact-item">
+          <img src="Images/Icon (1).png" alt="Phone" />
+          <span>+2347046854526</span>
+        </div>
+        <div class="contact-item">
+          <img src="Images/Icon.png" alt="Email" />
+          <span>Info@communicationsarc.com</span>
+        </div>
+        <form class="subscription-form"  action="https://formsubmit.co/Bolu@communicationsarc.com" method="POST">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom section -->
+    <div class="footer-bottom">
+      <hr />
+      <div class="footer-links">
+          <p>© 2025 COMMUNICATIONS ARC LTD.</p>
+        <a href="#" class="terms">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    
+  </footer>
+  
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const closeBtn = document.querySelector(".close-btn");
+    const collapseNav = document.querySelector(".navbar-collapse");
+
+    if (closeBtn && collapseNav) {
+      closeBtn.addEventListener("click", function () {
+        const bsCollapse = bootstrap.Collapse.getInstance(collapseNav);
+        if (bsCollapse) {
+          bsCollapse.hide();
+        }
+      });
+    }
+  });
+</script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+        
+    
+</body>
+</html>

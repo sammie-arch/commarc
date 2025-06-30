@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign</title>
+     <!-- Bootstrap CSS -->
+     
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="icon" href="Images/comm arc icon.png" type="image/svg" />
+    <!-- <link rel="stylesheet" href="campaign1.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+      *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        @font-face {
+  font-family: 'Bagoss';
+  src: url('font/BagossStandardTRIAL-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bagoss';
+  src: url('font/BagossStandardTRIAL-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bagoss';
+  src: url('font/BagossStandardTRIAL-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+  
+.container {
+  max-width: 100%;
+  padding: 0px; /* Optional padding */
+  overflow-x: hidden;
+}
+
+ .navbar{
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+  padding: 1%;
+  position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+ 
+
+        }
+        /* nav */
+      
+        .navbar a {
+            text-decoration: none;
+  color: #043D50;
+  margin: 0 1rem;
+  font-family: 'Bagoss',sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin: 1px;
+  padding: 14px;
+        }
+          
+           
+        
+       /* NAV */
+       .navdiv {
+          display: flex;
+  justify-content: space-between; /* ✅ Keeps logo left and nav right */
+  align-items: center;
+  width: 100%;
+        }
+        /*NAV  */
+        .navdiv ul {
+          display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  flex-wrap: wrap;
+        }
+        .navdiv ul li {
+            margin: 0 1rem;
+        }
+        .logo{
+            margin-left: 50px;
+            margin-right: 90px;
+            
+        }
+        /*Hover effects*/
+        .navdiv ul li.campaigns a:hover,
+        .navdiv ul li.partners a:hover,.navdiv ul li.about a:hover  {
+            color: white; 
+            text-decoration: none; 
+            background-color: #663776;
+            border-radius: 20px;
+        }
+        .navdiv ul li.get a{
+            background-color: #663776;
+            color: white;
+            padding: 20px 30px;
+            border-radius: 5px;
+            
+        }
+        .navdiv ul li.get a :hover{
+            color:white;
+            animation: shake 0.5s;
+            
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+        .mini-nav {
+    width: 100%;
+    height: 195px;
+    background-color: #032430;
+    
+}
+.niggs img{
+    padding: 20px 60px 20px 60px;
+    width: 100%;
+    background-color:#F6F3FE ;
+}
+
+/* Service Section */
+.services-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 90px;
+    background-color: #f6f6f6;
+    margin-top: -10px;
+}
+
+.left-side {
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 50px;
+   
+}
+
+.right-side {
+    width: 55%;
+    display: flex;
+    flex-direction: column; /* Ensures content stacks correctly */
+}
+
+.small-lines img {
+    width: 50px;
+    margin-right: -20px;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    width: 429px;
+}
+/* new1 */
+.services-list a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 19px;
+    color: #17012C;
+    font-weight: 600;
+    transition: 0.3s;
+    height: 65px;
+    font-family: 'Bagoss',sans-serif;
+    justify-content: space-between; /* Ensures text is left-aligned and arrow is at the right */
+}
+
+.services-list a img {
+    width: 20px;
+    
+}
+
+.services-list a.active {
+    background-color: #663776;
+    color: white;
+}
+
+.services-list a:hover {
+    background-color: #663776;
+    color: white;
+}
+/* new2 */
+
+.right-side h2 {
+    margin-top: 20px;
+    font-family: 'Bagoss',sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #17012C;
+    padding-bottom: 10px;
+}
+/* new3 */
+
+.right-side p {
+    color: #504E4E;
+    line-height: 35px;
+    font-family: 'Bagoss',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.challenge-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.challenge-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.challenge-item img {
+    width: 19px;
+}
+/* new4 */
+.challenge-item p{
+    font-size: 19px;
+    font-family: 'Bagoss',sans-serif;
+    font-weight: 400;
+}
+/* new5 */
+.left-side h2 {
+    color: #17012c;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Bagoss',sans-serif;}
+
+.services-right {
+    display: flex;
+    justify-content: center; /* Centers image */
+    margin-bottom: 20px; /* Adds space before "The Challenge" */
+}
+
+.services-right img {
+    width: 950px;
+    max-width: 110%;
+    object-fit: cover;
+}
+.what-we-provide {
+    margin-bottom: 20px; /* Adds space between text and image */
+}
+
+    .bottom-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+    width: 900px;
+   
+}
+/* new6 */
+.bottom-right a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #17012C;
+    font-weight: 600;
+    transition: 0.3s;
+    height: 75px;
+    font-family: 'Bagoss',sans-serif;    justify-content: space-between; /* Ensures text is left-aligned and arrow is at the right */
+}
+.bottom-right a img {
+    width: 20px;}
+
+
+    .full-width-section {
+    width: 100%;
+    background-color: #f6f6f6;
+    padding: 50px 0; /* Adds spacing inside the section */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the button */
+}
+
+.full-width-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers both image and button */
+    margin-top: 20px;
+}
+
+.contact-container a {
+    display: block;
+    text-align: center;
+    background-color: #032430;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding:  40px 120px;
+    margin-top: 10px;
+    
+    transition: background-color 0.3s ease;
+}
+.contact-container a p {
+    margin: 0; /* Removes default margin from the paragraph */
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+
+.contact-container img {
+    width: 1200px; /* Adjust as needed */
+    height: auto;
+    display: block;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+
+
+.contact-container a:hover {
+    background-color: #010d11;
+}
+
+
+/* Footer */
+/* new7 */
+
+.footer {
+    background-color: #442052;
+    width: 1920px;
+    height: 490px;
+    padding: 50px 100px;
+    color: white;
+    font-family: 'Bagoss Bold',sans-serif;
+    width: 100%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+}
+
+/* Footer Logo */
+.footer-logo {
+    width: 320px;
+    margin-bottom: 30px;
+}
+
+/* Footer Column Styling */
+.footer-column h2 {
+    font-size: 29px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 20px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+   margin: 5px 0 90px 0;
+   font-size: 20px;
+   font-weight: 500px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration:none;
+}
+
+/* Social Icons */
+.social-icons img {
+    width: 30px;
+    margin-right: 10px;
+    margin-top: 50px;
+}
+
+/* Recent Posts */
+.recent-post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recent-post img {
+    width: 80px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.recent-post a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.recent-post a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Us Section */
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-item img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* Subscription Form */
+.subscription-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.subscription-form input {
+    padding: 12px;
+    font-size: 16px;
+    width: 420px;
+    border: none;
+    border-radius: 15px;
+}
+
+.subscription-form button {
+    background-color: purple;
+    color: white;
+    font-size: 24px;
+    padding: 12px 20px;
+    border: none;
+    font-family: 'BagossStandardTRIAL-Regular';
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: -100px;
+}
+
+.subscription-form button:hover {
+    background-color: #6a0dad;
+    color: white;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  
+}
+
+.footer-bottom hr {
+  border: 1px solid white;
+  
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  
+
+}
+.footer-links .terms{
+  margin-left: 1000px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.small-footer {
+    width: 100%;
+    height: 80px;
+    background-color: #796AB0; /* Slightly darker purple */
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+.small-footer p {
+    color: #DED8E1;
+    font-size: 24px;
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+}
+
+
+
+@font-face {
+    font-family: 'Bagoss Standard TRIAL';
+    src: url('fonts/BagossStandardTRIAL-Regular.ttf') format('truetype');
+}
+
+
+i {
+    font-style: normal; /* Removes italic */
+    text-decoration: none; /* Removes underline */
+}
+
+/* General styles for smaller screens */
+body {
+    font-size: 16px; /* Adjust base font size for smaller screens */
+    
+}
+.hamburger{
+    display: none;
+}
+.close-btn {
+    display: none;
+}   
+.nav-item-get a.nav-link,
+.nav-item.get a.nav-link {
+  background-color: #663776;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: 'Bagoss Bold', sans-serif;
+  transition: 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-item-get a.nav-link:hover,
+.nav-item.get a.nav-link:hover {
+  background-color: #4e265c;
+  color: white;
+}
+
+/* Responsive changes */
+
+
+@media (min-width: 992px) {
+  .row > div:nth-of-type(2) .box-top,
+  .row > div:nth-of-type(5) .box-top {
+    background-color: #4e265c;
+    transform: translateY(-70px);
+  }
+   .mobile-logo {
+    height: 70px;
+    width: auto;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+
+ @media (max-width: 991px) {
+ 
+
+  .navbar-toggler {
+    background-color: #4e265c;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+   
+  
+  }
+
+  .logo {
+    margin: 0;
+  }
+   .mobile-logo {
+    width: 100px;
+     /* ⬅️ prevent it from growing too wide */
+    height: auto;
+    
+    flex-shrink: 100;
+   
+  }
+
+  .navbar-toggler {
+    margin-right: 15px;
+    background-color: #663776;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .navbar-toggler img {
+    width: 24px;
+    height: 24px;
+    
+  }
+
+  .d-lg-none .logo {
+    /* flex-shrink: 1;
+    overflow: hidden; */
+  }
+
+  .d-lg-none {
+    /* padding: 0 16px;  */
+  }
+
+  .container-fluid{
+    padding: 0 !important;
+  }
+   .navbar-toggler {
+    z-index: 999;
+  }
+
+  .navbar .logo img,
+  .navbar-toggler img {
+    max-height: 40px;
+    width: auto;
+  }
+ 
+
+  #nav-links-mobile {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    max-width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 20px;
+    gap: 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 1050;
+    transition: all 0.3s ease;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: block;
+    z-index: 1060;
+  }
+
+  .close-btn img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  
+}
+
+
+
+
+@media (max-width: 767px) {
+    .mini-nav{
+        display: none;
+    }
+    .niggs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        height: auto;
+              
+
+    }
+    .niggs img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120%;
+       margin-top: 20%;
+
+    }
+  
+  
+
+/* services section */
+
+  .services-section {
+    flex-direction: column;
+    padding: 40px 20px; /* Less padding on mobile */
+    gap: 40px;
+  }
+  
+  .left-side {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .services-list {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .services-list a {
+    font-size: 14px;
+    height: 60px;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+
+  .right-side h2 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .right-side p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #000;
+  }
+
+  .small-lines img {
+    width:18%;
+   
+  }
+
+  .services-right img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .challenge-grid {
+    grid-template-columns: 1fr; /* Stack vertically on mobile */
+    gap: 20px;
+  }
+
+  .challenge-item p {
+    font-size: 15px;
+  }
+
+  .bottom-right {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .bottom-right a {
+    font-size: 16px;
+    height: 65px;
+  }
+  /* Bottom image section */
+
+  .full-width-section {
+    padding: 30px 10px;
+  }
+
+  .full-width-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-container {
+    margin-top: 30px;
+  }
+
+  .contact-container img {
+    width: 90%; /* Shrink "Get in Touch" image */
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  .contact-container a {
+    padding: 20px 40px; /* Smaller padding for button */
+  }
+
+  .contact-container a p {
+    font-size: 24px; /* Smaller font size for mobile */
+  }
+  .subscription-form input {
+  padding: 10px;
+  font-size: 14px;
+  width: 280px;
+  border: 2px;
+  border-radius: 20px;
+  font-family: 'Bagoss Bold', sans-serif;
+  outline: none;
+  height: 80px;
+
+}
+
+.subscription-form button {
+  background-color: #713586!important;
+  color: white;
+  font-size: 18px;
+  padding: 1px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: -90px;
+  font-family: 'Bagoss Bold', sans-serif;
+  font-weight: 400;
+    overflow: show;
+    
+    
+}
+/**footer */
+.footer {
+  padding: 40px 20px;
+  height: auto;
+  background-color: #4E265C;
+}
+
+.footer-container {
+  grid-template-columns: 1fr; /* Stack all columns on mobile */
+  gap: 20px;
+}
+.footer-column p{
+  font-size: 12px;
+  width: 70%;
+  
+  
+}
+.social-icons  a img {
+  margin-top: 5%;
+}
+.footer-logo {
+  width: 60%;
+}
+
+.footer-column h2 {
+  font-size: 16px;
+}
+
+.footer-column ul li {
+  margin-bottom: 22px;
+}
+
+.footer-column ul li a {
+  font-size: 12px;
+ 
+}
+
+.recent-post a {
+  font-size: 12px;
+}
+.footer-links{
+  margin-top: 0%;
+}
+
+/* new foeter */
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer-bottom hr {
+  border: 1px solid white;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  
+
+}
+.footer-links .terms{
+  margin-left: 10px;
+}
+
+
+.footer-links {
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.small-footer {
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.small-footer p {
+  font-size: 14px;
+}
+
+.small-footer{
+  display: none;
+}
+}
+
+
+     
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+ <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="container-fluid">
+
+    <!-- ✅ MOBILE ONLY: Logo + Toggler -->
+    <div class="d-lg-none w-100 d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/Logo.svg" alt="Mobile Logo" class="mobile-logo" />
+        </a>
+      </div>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <img src="Images/hamburgerwhite.png" alt="Menu" width="24" height="24" />
+      </button>
+    </div>
+
+    <!-- ✅ DESKTOP ONLY: Logo + Nav -->
+    <div class="d-none d-lg-flex justify-content-between align-items-center w-100">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/Logo.svg" alt="Desktop Logo" class="desktop-logo" />
+        </a>
+      </div>
+
+      <ul class="navbar-nav d-flex flex-row gap-3" id="nav-links-desktop">
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="ourcampaign.html">Our Campaigns</a></li>
+        <li class="nav-item"><a class="nav-link" href="partners.html">Our Partners & Clients</a></li>
+        <li class="nav-item-get">
+          <a class="nav-link" href="mailto:info@communicationsarc.com"><span>Get</span> <span>Started</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ✅ MOBILE ONLY: Slide-Out Menu -->
+    <div class="collapse navbar-collapse d-lg-none custom-collapse mt-3" id="navbarNav">
+      <ul class="navbar-nav d-lg-none" id="nav-links-mobile">
+        <li class="close-btn">
+          <img src="Images/close_33dp_1F1F1F_FILL0_wght400_GRAD0_opsz40.png" alt="Close Menu" />
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="ourcampaign.html">Our Campaigns</a></li>
+        <li class="nav-item"><a class="nav-link" href="partners.html">Our Partners & Clients</a></li>
+        <li class="nav-item get">
+          <a class="nav-link" href="mailto:Info@communicationsarc.com"><span>Get</span> <span>Started</span></a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+        <div class="mini-nav">
+            <h1 style="color: white; text-align: center; padding: 30px;">Our Campaigns</h1>
+        </div>
+        <div class="niggs">
+            <img src="Images/niggs.png" alt="A campaign picture">
+        </div>
+<!-- Service Section -->
+<section class="services-section">
+    <div class="left-side">
+        <h2>All Services</h2>
+        <div class="small-lines">
+            <img src="Images/Horizontal Large.png" alt="Line 1">
+            <img src="Images/Horizontal Large.png" alt="Line 2">
+        </div>
+        <div class="services-list">
+            <a href="campaign.html" class="active"> 
+                Digital Marketing <span class="fa-solid fa-arrow-right"></i>  <!-- Right Arrow --></a>
+            </a>
+            <a href="campaign2.html">Influencers Marketing <span class="fa-solid fa-arrow-right"></i>  <!-- Right Arrow --></a>
+            <a href="campaign3.html">Affiliate Marketing <span class="fa-solid fa-arrow-right"></i>  <!-- Right Arrow --></a>
+            <a href="campaign4.html">Radio Promotions<span class="fa-solid fa-arrow-right"></i>  <!-- Right Arrow --></a>
+            <a href="campaign5.html">Guerilla Marketing <span class="fa-solid fa-arrow-right"></i>  <!-- Right Arrow --></a>
+            <a href="campaign6.html">Communications Strategy & Insights <span class="fa-solid fa-arrow-right"></i>  <!-- Right Arrow --></a>
+        </div>
+    </div>
+
+    <div class="right-side">
+        <h2>Digital Marketing</h2>
+        <p>Digital marketing is a cornerstone of brand success. It encompasses a spectrum of strategies, tools, and platforms to reach, engage, and convert your audience — from awareness to advocacy. In today’s hyper-connected world, brands must go beyond visibility; they must create meaningful, data-driven experiences that resonate with their target market across digital touchpoints.
+            <br>
+
+        <br>
+At Communications Arc, our digital marketing approach is rooted in insight, creativity, and performance. We design tailored strategies that align with business goals while meeting audiences where they are — whether it’s through search engines, social media, email, content, or paid advertising.        </p>
+
+        <!-- What We Provide Section Above Image -->
+        <div class="what-we-provide">
+            <h2>What We Provide</h2>
+            <p>At Communications Arc, we provide end-to-end digital marketing services designed to elevate brand visibility, drive engagement, and convert audiences into loyal customers. Our digital marketing solutions are data-driven, insight-led, and tailored to each client’s goals and audience. </p>
+            <br>
+
+            <p> 
+
+                Our Offerings include digital strategy development, content creation and marketing, social media management, search engine, optimization, performance marketing (PPC, Display, Social Ads), email marketing & automation, analytics and reporting. We dont just market, we build digital ecosystems that deliver value, build trust, and scale growth  </p>
+        </div>
+       
+        <!-- Image Below What We Provide, Above The Challenge -->
+        <div class="services-right">
+            <img src="Images/chart img.png" alt="Services Image">
+        </div>
+
+        <h2>The Challenge</h2>
+        <p>Many brands struggle to make meaningful impact in today’s overcrowded digital space. Rising competition, shifting algorithms, and evolving consumer behaviors make it difficult to stay relevant, capture attention, and maintain consistent engagement.
+
+        </p>
+        <br>
+        <p>Communications Arc was brought in to help a client that had visibility but lacked strategic cohesion across digital channels. Their campaigns were fragmented, performance inconsistent, and their audience engagement was low. The challenge was to unify their digital presence, develop a clear voice, and deliver results that could be measured and scaled.</p>
+        
+        <!-- The Solution -->
+        <h2>The Solution</h2>
+        <p>Communications Arc began by conducting a comprehensive digital audit to identify gaps, opportunities, and audience behaviors. We developed a unified digital marketing strategy that connected all touchpoints — from social media to search to content and email.
+
+        </p>
+        <br>
+        <p>We implemented performance-driven content calendars, optimized web presence for SEO, and launched targeted paid ad campaigns tailored to audience segments. Every action was supported by analytics, enabling us to refine the strategy in real time.</p>
+
+        <br>
+        <p>By aligning all digital efforts under one cohesive strategy, we transformed the client’s digital presence into a high-performing ecosystem — increasing traffic, improving engagement, and driving stronger, measurable business outcomes.</p>
+
+<div class="challenge-container">
+    <div class="challenge-grid">
+        <div class="challenge-item">
+            <img src="Images/check.png" alt="Check">
+            <p>Understanding consumer behavior</p>
+        </div>
+        <div class="challenge-item">
+            <img src="Images/check.png" alt="Check">
+            <p>Staying ahead of competitors</p>
+        </div>
+        <div class="challenge-item">
+            <img src="Images/check.png" alt="Check">
+            <p>Optimizing digital strategies</p>
+        </div>
+        <div class="challenge-item">
+            <img src="Images/check.png" alt="Check">
+            <p>Ensuring consistent branding</p>
+        </div>
+    </div>
+
+    <!-- Bottom Right Section (Separate from Challenge Grid) -->
+    <div class="bottom-right">
+        <a href="#">Why Is SEO Important For Small Business? <img src="Images/access.png" alt="Arrow"></a>
+        <a href="#">How Do I Choose The Best SEO Agency? <img src="Images/access.png" alt="Arrow"></a>
+        <a href="#">Better Security And Faster Server? <img src="Images/access.png" alt="Arrow"></a>
+        <a href="#">Deployment Within Few Minutes <img src="Images/access.png" alt="Arrow"></a>
+    </div>
+</div>
+    
+        </div>
+        
+</section>
+
+<!-- Full-width Image Section -->
+<section class="full-width-section">
+    <img src="Images/whiteset.png" alt="Full Width Image">
+    
+    <!-- Contact Us Button -->
+    <div class="contact-container">
+        <img src="Images/Get in touch.png" alt="Contact Us">
+        <a href=""><p>Contact us</p></a>
+    </div>
+</section>
+
+
+
+
+
+
+        
+        
+
+
+
+ <!-- Footer -->
+
+ <footer class="footer">
+    <div class="footer-container">
+        <!-- Column 1: Logo, Text, Social Icons -->
+        <div class="footer-column">
+            <img src="Images/Link.png" alt="Logo" class="footer-logo">
+            <p>The number 1 digital marketing agency for bookmarkers in Nigeria. The number 1 digital marketing agency for bookmarkers in Nigeria.</p>
+            <div class="social-icons">
+                <a href=""><img src="Images/facebook.png" alt="Facebook"></a>
+                <a href=""><img src="Images/twitter.png" alt="Twitter"></a>
+                <a href=""><img src="Images/youtube.png" alt="Instagram"></a>
+               <a href=""><img src="Images/Linkdin.png" alt="LinkedIn"></a> 
+            </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+          <div class="footer-column">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="about.html">>> About Communications arc</a></li>
+              <li><a href="partners.html">>> Our Partners & Clients</a></li>
+              <li><a href="ourcampaign.html">>> Our Campaigns</a></li>
+              <li><a href="campaign.html">>> Our Services</a></li>
+              <li><a href="mailto:info@communicationsarc.com">>> Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Recent Posts -->
+          <div class="footer-column">
+            <h2>Recent Posts</h2>
+            <div class="recent-post">
+              <img src="Images/Recent 1.png" alt="Post 1" />
+              <a href="https://www.instagram.com/spaceuniverse.africa?igsh=cWhxdG83OXg2cXcw">Top 5 Most Famous Technology Trend In 2024</a>
+            </div>
+            <div class="recent-post">
+              <img src="Images/Recent 2.png" alt="Post 2" />
+              <a href="https://www.instagram.com/spaceuniverse.africa?igsh=cWhxdG83OXg2cXcw">The Surfing Man Will Blow Your Mind</a>
+            </div>
+          </div>
+
+        <!-- Column 4: Contact Us -->
+        <div class="footer-column">
+            <h2>Contact Us</h2>
+            <div class="contact-item">
+                <img src="Images/Icon (1).png" alt="Phone">
+                <span>+2347046854526</span>
+            </div>
+            <div class="contact-item">
+                <img src="Images/Icon.png" alt="Email">
+                <span>Info@example.com</span>
+            </div>
+            <form class="subscription-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bottom section -->
+    <div class="footer-bottom">
+        <hr>
+        <div class="footer-links">
+           <p>© 2025 COMMUNICATIONS ARC LTD.</p>
+            <a href="#" class="terms">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+
+</div>
+        
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const closeBtn = document.querySelector(".close-btn");
+    const collapseNav = document.querySelector(".navbar-collapse");
+
+    if (closeBtn && collapseNav) {
+      closeBtn.addEventListener("click", function () {
+        const bsCollapse = bootstrap.Collapse.getInstance(collapseNav);
+        if (bsCollapse) {
+          bsCollapse.hide();
+        }
+      });
+    }
+  });
+</script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        
+        
+</body>
+</html>

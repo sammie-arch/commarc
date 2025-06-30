@@ -1,0 +1,1498 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Partners</title>
+     <!-- Bootstrap CSS -->
+     
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    
+    <link rel="icon" href="Images/comm arc icon.png" type="image/svg" />
+    <style>
+      html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Add if desktop dont take full width */
+        .container, .main-content {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+        @font-face {
+  font-family: 'Bagoss Bold';
+  src: url('font/BagossStandardTRIAL-Regular.ttf ') format('truetype');
+  font-weight: 400;
+  
+}
+@font-face {
+            font-family: 'Bagoss Standard TRIAL';
+            src: url('path/to/BagossStandardTRIAL.woff2') format('woff2'),
+                 url('path/to/BagossStandardTRIAL.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+        }
+font-face {
+  font-family: 'Bagoss Bold';
+  src: url('font/BagossStandardTRIAL-Regular.ttf ') format('truetype');
+  font-weight: 700;
+  
+}
+
+font-face {
+  font-family: 'Bagoss Bold';
+  src: url('font/BagossStandardTRIAL-Regular.ttf ') format('truetype');
+  font-weight: 600;
+  
+}
+font-face {
+  font-family: 'Bagoss Bold';
+  src: url('font/BagossStandardTRIAL-Regular.ttf ') format('truetype');
+  font-weight: 500;
+  
+}
+        .navbar {
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 1%;
+            position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+   
+
+        }
+         /* nav */
+      
+         .navbar a {
+          text-decoration: none;
+  color: #043D50;
+  margin: 0 1rem;
+  font-family: 'Bagoss Bold',sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin: 1px;
+  padding: 14px;
+      
+        }
+          
+           
+        
+       /* NAV */
+       .navdiv {
+          display: flex;
+  justify-content: space-between; /* ✅ Keeps logo left and nav right */
+  align-items: center;
+  width: 100%;
+        }
+        /*NAV  */
+        .navdiv ul {
+          display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  flex-wrap: wrap;
+        }
+        .navdiv ul li {
+            margin: 0 1rem;
+        }
+        .logo{
+            margin-left: 50px;
+            margin-right: 90px;
+            
+        }
+        /*Hover effects*/
+        .navdiv ul li.campaigns a:hover,
+        .navdiv ul li.partners a:hover,.navdiv ul li.about a:hover  {
+            color: white; 
+            text-decoration: none; 
+            background-color: #663776;
+            border-radius: 20px;
+        }
+        .navdiv ul li.get a{
+            background-color: #663776;
+            color: white;
+            padding: 20px 30px;
+            border-radius: 5px;
+            
+        }
+        .navdiv ul li.get a :hover{
+            color:white;
+            animation: shake 0.5s;
+            
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+        .mini-nav {
+width: 100%;
+height: 195px;
+background-color: #032430;
+
+
+        }
+
+        /* 1st section */
+        .partners-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+            url('Images/niggsshaking.png');
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 100vh;
+}
+
+.overlay-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.partners-section h1 {
+  font-size: 116px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Bagoss Bold', sans-serif;
+}
+
+.partners-section p {
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: 'Bagoss Bold', sans-serif;
+  font-weight: 600;
+}
+
+/* Carousel */
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 50px;
+  animation: slide 15s linear infinite;
+  white-space: nowrap;
+}
+
+/* Adjust image sizes */
+.carousel img {
+  width: 500px;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* Carousel animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* Actual image under the carosel */
+.cta-section {
+  padding: 80px 0px;
+  background-color: #f2eefd;
+  overflow-x: hidden;
+  width: 100vw;
+  
+  text-align: center;
+  font-family: 'Bagoss Bold', sans-serif;
+}
+
+
+.bottom-cta-image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: 0 auto 40px auto;
+}
+.top-cta-image{
+    width: 270px;
+  max-width: 1000px;
+  height: auto;
+  display: inline-block;
+  margin: 0 30% 40px auto;
+  
+}
+
+.cta-text h1 {
+  font-size: 86px;
+  font-weight: 700;
+  font-family: 'Bagoss Bold', sans-serif;
+  width: 100%;
+  max-width: 1000px;
+  color: #17012C;
+  
+  margin-left: 25%;
+  margin-bottom: 20px;
+   padding-right: 120px;
+}
+.cta-text .awesome{
+  padding-right: 120px;
+}
+
+.cta-text p {
+  font-size: 28px;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  color: #504E4E;
+  line-height: 1.6;
+
+}
+.cta-text .para{
+  margin-top: -2%;
+  margin-left:9%;
+}
+
+.cta-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 200%;
+  
+
+  margin: 0 10% 50px 25%;
+
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  gap: 10px;
+  font-size: 28px;
+  font-family: 'Bagoss Bold', sans-serif;
+  color: #17012C;
+  font-weight: 600;
+}
+
+.list-item img {
+  width: 24px;
+  height: 24px;
+}
+.cta-section .bottom-cta-image{
+  width: 20%;
+  display: inline-block;
+  margin-top: 2%;
+} 
+/* image under the carousel */
+.under-partners-image {
+  text-align: center;
+margin-top: 150px;
+  background-color: #fff; /* or keep it transparent if you want it to blend in */
+}
+
+.under-partners-image img {
+  width:100%;
+  height: auto;
+}
+
+
+.under-3column-image {
+  text-align: center;
+margin-top: -5px;
+
+  background-color: #f1f2ff; /* or keep it transparent if you want it to blend in */
+}
+
+.under-3column-image img {
+  width:100%;
+  height: auto;
+}
+
+.under-nigg-image{
+    text-align: center;
+
+  background-color: #f1f2ff; /* or keep it transparent if you want it to blend in */
+}
+.under-nigg-image img {
+  width:100%;
+  height: auto;
+}
+/* embeded picture */
+
+.frame-section {
+  padding: 60px 20px;
+  background-color: #f1f2ff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 150px 0 0 100px;
+  
+}
+
+.frame-container {
+  display: flex;
+  position: relative;
+  
+  flex-wrap:nowrap;
+   
+}
+
+.frame-image-wrapper {
+  position: relative;
+  width: 650px; /* adjust based on your frame size */
+  height: auto;
+}
+
+.frame-image-wrapper .frame {
+  width: 100%;
+  display: block;
+  z-index: 1;
+  position: relative;
+  
+}
+
+.frame-image-wrapper .embedded {
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  width: 100%;
+  height: 96%;
+  object-fit: cover;
+  z-index: 0;
+  border-radius: 10px; /* optional */
+  
+}
+
+/* ✅ Letter images */
+.letter-images {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.letter-images .letter {
+  width: 50%; /* adjust to desired size */
+  height: 50%;
+  border-radius: 8px;
+  margin-top: 25%;
+  margin-left: 40%;
+}
+
+/* last part */
+
+.lastpart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f2ff;
+    gap: 40px; /* Adds space between the two images */
+    padding: 40px 0;
+}
+.lastpart .readytostart {
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 190px;
+    margin-top: 300px;
+    margin-bottom: 40px; /* Adjusts the overlap */
+
+   
+}
+
+/* Subscription Form */
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  margin: 0 0 100px 0;
+}
+
+.subscription-form input {
+  padding: 15px;
+  font-size: 18px;
+  width: 390px;
+  border: 2px;
+  border-radius: 20px;
+  outline: none;
+  height: 100px;
+}
+
+.subscription-form button {
+  background-color: purple;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: -90px;
+}
+
+.subscription-form button:hover {
+  background-color: #6a0dad;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #442052 ;
+  width: 1920px;
+  height: 520px;
+  padding: 50px 100px;
+  color: white;
+  font-family: 'Bagoss Bold', sans-serif;  width: 100%;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+
+/* Footer Logo */
+.footer-logo {
+  width: 320px;
+  margin-bottom: 30px;
+}
+
+/* Footer Column Styling */
+.footer-column h2 {
+  font-size: 29px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 20px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0 90px 0;
+  font-size: 20px;
+  font-weight: 500px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: none;
+}
+
+/* Social Icons */
+.social-icons img {
+  width: 30px;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+/* Recent Posts */
+.recent-post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.recent-post img {
+  width: 80px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.recent-post a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.recent-post a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Us Section */
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-item img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+/* Subscription Form */
+.subscription-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+  margin-right: 10px;
+}
+
+.subscription-form input {
+  padding: 12px;
+  font-size: 16px;
+  width: 420px;
+  border: none;
+  border-radius: 15px;
+}
+
+.subscription-form button {
+  background-color: #692481;
+  color: white;
+  font-size: 24px;
+  padding: 12px 20px;
+  border: none;
+  font-family: "Bagoss Standard TRIAL";
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.subscription-form button:hover {
+  background-color: #6a0dad;
+  color: white;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+
+}
+
+.footer-bottom hr {
+  border: 1px solid white;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  
+  
+
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+
+}
+.footer-links .terms{
+  margin-left: 1000px;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.small-footer {
+  width: 100%;
+  height: 80px;
+  background-color: #796ab0; /* Slightly darker purple */
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  margin-top: -50px;
+}
+.small-footer p {
+  color: #ded8e1;
+  font-size: 24px;
+  font-family: "Roboto Mono";
+  font-weight: 400;
+}
+
+/* Ensure images are responsive */
+.image-stack img {
+    width: 100%; /* Prevents images from going too wide */
+    height: auto;  
+}
+
+
+/* Responsiveness */
+@media (min-width: 992px) {
+  .row > div:nth-of-type(2) .box-top,
+  .row > div:nth-of-type(5) .box-top {
+    background-color: #4e265c;
+    transform: translateY(-70px);
+  }
+   .mobile-logo {
+    height: 70px;
+    width: auto;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .navbar-nav .nav-link:hover {
+    background-color: #663776;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  .mobile-under-partners-image {
+    display: none;
+  }
+}
+
+
+ @media (max-width: 991px) {
+ 
+
+  .navbar-toggler {
+    background-color: #4e265c;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+   
+  
+  }
+  
+
+  .logo {
+    margin: 0;
+  }
+   .mobile-logo {
+    width: 100px;
+     /* ⬅️ prevent it from growing too wide */
+    height: auto;
+    
+    flex-shrink: 100;
+   
+  }
+
+  .navbar-toggler {
+    margin-right: 15px;
+    background-color: #663776;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+
+  .navbar-toggler img {
+    width: 24px;
+    height: 24px;
+    
+  }
+
+  .d-lg-none .logo {
+    /* flex-shrink: 1;
+    overflow: hidden; */
+  }
+
+  .d-lg-none {
+    /* padding: 0 16px;  */
+  }
+
+  .container-fluid{
+    padding: 0 !important;
+  }
+   .navbar-toggler {
+    z-index: 999;
+  }
+
+  .navbar .logo img,
+  .navbar-toggler img {
+    max-height: 40px;
+    width: auto;
+  }
+  
+ 
+
+  #nav-links-mobile {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    max-width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 20px;
+    gap: 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 1050;
+    transition: all 0.3s ease;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: block;
+    z-index: 1060;
+  }
+
+  .close-btn img {
+    width: 32px;
+    height: 32px;
+  }
+  .container{
+  padding: 0;
+  margin: 0;
+}
+
+
+  
+
+}
+  @media (max-width: 768px) {
+ 
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.container{ 
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  background-color: #F1F2FF;
+}
+.mini-nav{
+  display: none;
+}
+
+.partners-section {
+    padding: 60px 20px;
+    height: auto;
+  }
+
+  .partners-section h1 {
+    font-size: 35px;
+    font-family: 'Bagoss', sans-serif;
+  }
+
+  .partners-section p {
+    font-size: 11px;
+  }
+.carousel-track img{
+  width: 60%;
+  margin-top: 15%;
+  margin-bottom:10%;
+
+}
+.awesome img{
+  width: 110%;
+  
+}
+
+.under-partners-image{
+  display: none;
+}
+.mobile-under-partners-image{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.under-nigg-image{
+  display: none;
+
+}
+/* New lets together section */
+.cta-section {
+    padding: 40px 0;
+     
+  background-color: #f2eefd;
+  overflow-x: hidden;
+  width: 100%;
+  
+  text-align: center;
+  font-family: 'Bagoss Bold', sans-serif;
+  }
+
+  .top-cta-image {
+    width: 35%;
+    display: inline-block;
+    margin-bottom: 4%;
+    margin-right: 45%;
+  }
+  .cta-text {
+    width: 100%;
+   
+  }
+
+  .cta-text h1 {
+    font-size: 30px;
+    
+    margin-left: 0%;
+    padding-right: 0px;
+    margin-bottom: 2%;
+
+    
+
+  }
+  .cta-text .awesome{
+    padding-right: 35px;
+  }
+
+ .cta-text .paras{
+  font-size: 13px;
+
+  margin:10px 0px 0px 15px;
+  
+ }
+
+  .cta-text p {
+
+    display: none;
+
+  }
+
+  .cta-text .para {
+     margin-top: -7%;
+  margin-left:1%;
+  }
+
+  .cta-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 12px;
+    margin: 10px auto 20px auto;
+  }
+
+  .list-item {
+    font-size: 10px;
+
+  }
+
+  .list-item img {
+    width: 15px;
+    height: 15px;
+    margin: 0%;
+  }
+
+ .cta-section .bottom-cta-image {
+    width: 40%;
+   margin-top: 0%;
+  }
+/* lettered images first */
+  .frame-section {
+    padding: 60px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .frame-container {
+    flex-direction: column-reverse; /* So letter-images comes first */
+    align-items: center;
+    gap: 30px;
+  }
+
+  .letter-images {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  .letter-images .letter {
+    width: 80px;
+    height: auto;
+    margin: 0;
+  }
+
+/* 3 columns */
+.mobile-cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 10px;
+
+  }
+
+  .mobile-card {
+    width: 290px;
+    max-width: 100%;
+    height: 180px;
+    background-color: #FAF8FF;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  .mobile-card img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .mobile-card h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #17012C;
+    font-weight: 700;
+    font-family: 'Bagoss Bold', sans-serif;
+  }
+
+  .mobile-card p {
+    font-size: 14px;
+    color: #504E4E;
+    font-weight: 400;
+    width: 90%;
+    
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+/* end */
+  .frame-image-wrapper {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .frame-image-wrapper .frame {
+    width: 100%;
+  }
+
+  .frame-image-wrapper .embedded {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    width: 92%;
+    height: 94%;
+    object-fit: cover;
+  }
+.lastpart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f2ff;
+    gap: 0px; /* Adds space between the two images */
+    padding: 40px 0;
+}
+.lastpart .readytostart {
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 1%;
+    margin-right: 190px;
+  
+    margin-bottom: 40px; /* Adjusts the overlap */
+   
+}
+/* Subscription */
+.subscription-form input {
+  padding: 10px;
+  font-size: 14px;
+  width: 280px;
+  border: 2px;
+  border-radius: 20px;
+  font-family: 'Bagoss Bold', sans-serif;
+  outline: none;
+  height: 80px;
+
+}
+
+.subscription-form button {
+  background-color: #713586!important;
+  color: white;
+  font-size: 18px;
+  padding: 1px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: -90px;
+  font-family: 'Bagoss Bold', sans-serif;
+  font-weight: 400;
+    overflow: show;
+    
+    
+}
+/* footer */
+.footer {
+  padding: 40px 20px;
+  height: auto;
+  background-color: #4E265C;
+}
+
+.footer-container {
+  grid-template-columns: 1fr; /* Stack all columns on mobile */
+  gap: 20px;
+}
+.footer-column p{
+  font-size: 12px;
+  width: 70%;
+  
+  
+}
+.social-icons  a img {
+  margin-top: 5%;
+}
+.footer-logo {
+  width: 60%;
+}
+
+.footer-column h2 {
+  font-size: 16px;
+}
+
+.footer-column ul li {
+  margin-bottom: 22px;
+}
+
+.footer-column ul li a {
+  font-size: 12px;
+ 
+}
+
+.recent-post a {
+  font-size: 12px;
+}
+.footer-links{
+  margin-top: 0%;
+}
+
+
+
+.footer-links {
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.small-footer {
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.small-footer p {
+  font-size: 14px;
+}
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+
+}
+
+.footer-bottom hr {
+  border: 1px solid white;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  
+  
+
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+
+}
+.footer-links .terms{
+  margin-left: 10px;
+}
+
+.small-footer{
+  display: none;
+}
+.nav-item-get a.nav-link,
+.nav-item.get a.nav-link {
+  background-color: #663776;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: 'Bagoss Bold', sans-serif;
+  transition: 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-item-get a.nav-link:hover,
+.nav-item.get a.nav-link:hover {
+  background-color: #4e265c;
+  color: white;
+}
+
+
+  }
+  
+
+
+       
+
+
+
+
+
+
+  
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="container-fluid">
+
+    <!-- ✅ MOBILE ONLY: Logo + Toggler -->
+    <div class="d-lg-none w-100 d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/Logo.svg" alt="Mobile Logo" class="mobile-logo" />
+        </a>
+      </div>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <img src="Images/hamburgerwhite.png" alt="Menu" width="24" height="24" />
+      </button>
+    </div>
+
+    <!-- ✅ DESKTOP ONLY: Logo + Nav -->
+    <div class="d-none d-lg-flex justify-content-between align-items-center w-100">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/Logo.svg" alt="Desktop Logo" class="desktop-logo" />
+        </a>
+      </div>
+
+      <ul class="navbar-nav d-flex flex-row gap-3" id="nav-links-desktop">
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="ourcampaign.html">Our Campaigns</a></li>
+        <li class="nav-item"><a class="nav-link" href="partners.html">Our Partners & Clients</a></li>
+        <li class="nav-item get">
+          <a class="nav-link" href="mailto:info@communicationsarc.com"><span>Get</span> <span>Started</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ✅ MOBILE ONLY: Slide-Out Menu -->
+    <div class="collapse navbar-collapse d-lg-none custom-collapse mt-3" id="navbarNav">
+      <ul class="navbar-nav d-lg-none" id="nav-links-mobile">
+        <li class="close-btn">
+          <img src="Images/close_33dp_1F1F1F_FILL0_wght400_GRAD0_opsz40.png" alt="Close Menu" />
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="ourcampaign.html">Our Campaigns</a></li>
+        <li class="nav-item"><a class="nav-link" href="partners.html">Our Partners & Clients</a></li>
+        <li class="nav-item get">
+          <a class="nav-link" href="mailto:Info@communicationsarc.com"><span>Get</span> <span>Started</span></a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+        <div class="mini-nav">
+            <h1 style="color: white; text-align: center; padding: 30px;">Our Campaigns</h1>
+        </div>
+<!-- 1st section -->
+        <section class="partners-section">
+            <div class="overlay-content">
+              <h1>Our Associated Partners</h1>
+              <p>Why you need us for the growth of your business.Why you need us for the growth of your business.</p>
+            </div>
+          </section>
+
+           <!-- Carousel Container -->
+        <div class="carousel">
+            <div class="carousel-track">
+              <img src="Images/Melbet.png" alt="Partner 1" />
+              <img src="Images/paystckfull.png" alt="Partner 2" />
+              <img src="Images/End to end.png" alt="Partner 3" />
+              <img src="Images/transmit.png" alt="Partner 4" />
+  
+              <!-- Duplicate images to create a smooth loop -->
+              <img src="Images/Melbet.png" alt="Partner 1" />
+              <img src="Images/paystckfull.png" alt="Partner 2" />
+              <img src="Images/End to end.png" alt="Partner 3" />
+              <img src="Images/transmit.png" alt="Partner 4" />
+            </div>
+          </div>
+
+          <!-- image under the carousel -->
+           <section class="cta-section">
+  <!-- Top Linked Image -->
+  <a href="#">
+    <img src="Images/our expert team.png" alt="Top CTA Image" class="top-cta-image" />
+  </a>
+
+  <!-- Text Content -->
+  <div class="cta-text">
+    <h1>Let’s Make Something <span class="awesome">Awesome Together</span></h1>
+    <p>
+      Every pleasure is to be welcomed and every pain avoided. Certain <br>
+      circumstances and owing to the claims welcomed and every pain <br> <p class="para"> avoided
+      certain circumstances.</p>
+    </p>
+    <p class=" paras d-block d-lg-none"> 
+      Every pleasure is to be welcomed and every pain avoided. Certain 
+      circumstances and owing to the claims welcomed and every pain avoided
+      certain circumstances.
+    </p>
+
+    <!-- ✅ List Items -->
+    <div class="cta-list">
+      <div class="list-item">
+        <img src="Images/tick.png" alt="Tick" />
+        <span> 30-day money back guarantee</span>
+      </div>
+      <div class="list-item">
+        <img src="Images/tick.png" alt="Tick" />
+        <span> Web site Marketing Solutions</span>
+      </div>
+      <div class="list-item">
+        <img src="Images/tick.png" alt="Tick" />
+        <span> Unlimited Application</span>
+      </div>
+      <div class="list-item">
+        <img src="Images/tick.png" alt="Tick" />
+        <span> 24/7 system Monitoring</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Linked Image -->
+  <a href="ourcampaign.html">
+    <img src="Images/explore more.png" alt="Bottom CTA Image" class="bottom-cta-image" />
+  </a>
+</section>
+
+
+          <!-- <div class="awesome">
+            <img src="Images/awesome.png" alt="">
+          </div> -->
+
+          <!-- Image Under the carousel -->
+<div class="under-partners-image">
+    <img src="Images/3columns (2).png" alt="Partner Logos" />
+  </div>
+  <section class="mobile-cards-section d-block d-lg-none">
+  <div class="mobile-card">
+    <img src="Images/location.png" alt="Card Image 1" />
+    <h2>Our Address</h2>
+    <p>No 2 Montgomerry road 2b, Yaba lagos</p>
+  </div>
+
+  <div class="mobile-card">
+    <img src="Images/email.png" alt="Card Image 2" />
+    <h2>Info@communicationsarc.com</h2>
+    <p>Email us anytime for any kind
+of question.</p>
+  </div>
+
+  <div class="mobile-card">
+    <img src="Images/telephone.png" alt="Card Image 3" />
+    <h2>Hot: +234- 704-685-4526</h2>
+    <p>Call us any kind support we
+will wait for it.</p>
+  </div>
+</section>
+
+
+
+<!-- 
+  Image Under the image -->
+<!-- <div class="under-3column-image">
+    <img src="Images/3columns.png" alt="Partner Logos" />
+  </div> -->
+
+  <!-- nigg Under the image -->
+<div class="under-nigg-image">
+    <img src="Images/nigglaptop.png" alt="Partner Logos" />
+  </div>
+
+
+
+
+<!-- embeded pictures -->
+<section class="frame-section">
+  <div class="frame-container">
+    <div class="frame-image-wrapper">
+      <img src="Images/frame.png" alt="Frame" class="frame" />
+      <img src="Images/Section (1).png" alt="Embedded Image" class="embedded" />
+    </div>
+
+    <!-- ✅ New letter images -->
+    <div class="letter-images">
+      <img src="Images/letterC.png" alt="Letter 1" class="letter" />
+      <img src="Images/letterA.png" alt="Letter 2" class="letter" />
+    </div>
+  </div>
+
+      
+  <!-- last part -->
+  </section>
+  <div class="lastpart">
+    <img src="Images/Readytostart.png" alt="Top Image" class="readytostart">
+     <!-- Subscription Form -->
+     <form class="subscription-form">
+        <input type="email" placeholder="Enter your email.." required />
+        <button type="submit">Contact us</button>
+      </form>
+
+
+    
+  </div>
+
+
+
+<!-- Footer -->
+
+<footer class="footer">
+        <div class="footer-container">
+          <!-- Column 1: Logo, Text, Social Icons -->
+          <div class="footer-column">
+            <img src="Images/Link.png" alt="Logo" class="footer-logo" />
+            <p>
+The number 1 digital marketing agency in nigeria, trusted by top brands to deliver impact with innovation            </p>
+            <div class="social-icons">
+              <a href=""><img src="Images/facebook.png" alt="Facebook" /></a>
+              <a href=""><img src="Images/twitter.png" alt="Twitter" /></a>
+              <a href=""><img src="Images/youtube.png" alt="Instagram" /></a>
+              <a href=""><img src="Images/Linkdin.png" alt="LinkedIn" /></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="footer-column">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="about.html">>> About Communications arc</a></li>
+              <li><a href="partners.html">>> Our Partners & Clients</a></li>
+              <li><a href="ourcampaign.html">>> Our Campaigns</a></li>
+              <li><a href="campaign.html">>> Our Services</a></li>
+              <li><a href="mailto:info@communicationsarc.com">>> Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Recent Posts -->
+          <div class="footer-column">
+            <h2>Recent Posts</h2>
+            <div class="recent-post">
+              <img src="Images/Recent 1.png" alt="Post 1" />
+              <a href="https://www.instagram.com/spaceuniverse.africa?igsh=cWhxdG83OXg2cXcw">Top 5 Most Famous Technology Trend In 2024</a>
+            </div>
+            <div class="recent-post">
+              <img src="Images/Recent 2.png" alt="Post 2" />
+              <a href="https://www.instagram.com/spaceuniverse.africa?igsh=cWhxdG83OXg2cXcw">The Surfing Man Will Blow Your Mind</a>
+            </div>
+          </div>
+
+          <!-- Column 4: Contact Us -->
+          <div class="footer-column">
+            <h2>Contact Us</h2>
+            <div class="contact-item">
+              <img src="Images/Icon (1).png" alt="Phone" />
+              <span>+2347046854526</span>
+            </div>
+            <div class="contact-item">
+              <img src="Images/Icon.png" alt="Email" />
+              <span>Info@communicationsarc.com</span>
+            </div>
+            <form class="subscription-form"  action="https://formsubmit.co/Bolu@communicationsarc.com" method="POST">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit" >Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+  <!-- Bottom section -->
+  <div class="footer-bottom">
+    <hr />
+    <div class="footer-links">
+        <p>© 2025 COMMUNICATIONS ARC LTD.</p>
+      <a href="#" class="terms">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+
+
+          
+        </div>
+
+       <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const closeBtn = document.querySelector(".close-btn");
+    const collapseNav = document.querySelector(".navbar-collapse");
+
+    if (closeBtn && collapseNav) {
+      closeBtn.addEventListener("click", function () {
+        const bsCollapse = bootstrap.Collapse.getInstance(collapseNav);
+        if (bsCollapse) {
+          bsCollapse.hide();
+        }
+      });
+    }
+  });
+</script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
